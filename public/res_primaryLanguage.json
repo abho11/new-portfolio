@@ -1,0 +1,153 @@
+{
+    "basic_info": {
+      "description_header": "Hello!",
+      "description": "I'm a dedicated frontend developer with expertise in Python, JavaScript, and ReactJS. Pursuing a Master's in Information Systems at the University of Utah, I'm driven by a passion for the latest web frameworks. Outside coding, I find joy in nature photography and indulge in competitive gaming with League of Legends. I thrive on blending technical innovation with creative pursuits.",
+      "section_name": {
+        "about": "About me",
+        "projects": "Projects",
+        "skills": "Skills",
+        "experience": "Experience"
+      }
+    },
+    "projects": [
+      {
+        "title": "Suburban Outfitters",
+        "startDate": "2023",
+        "description": "Developed a dynamic online shopping and ecommerce platform for Suburban Outfitters, enhancing user convenience, personalized experiences, real-time order tracking, and inventory management. Leveraged React, HTML, CSS, PHP, and MySQL to create a seamless shopping experience for customers.",
+        "images": [
+          "images/portfolio/ecommerce/project1.jpg",
+          "images/portfolio/ecommerce/project2.png"
+        ],
+        "url": "",
+        "technologies": [
+          {
+            "class": "devicon-react-original",
+            "name": "React"
+          },
+          {
+            "class": "devicon-html5-plain",
+            "name": "HTML"
+          },
+          {
+            "class": "devicon-css3-plain",
+            "name": "CSS"
+          },
+          {
+            "class": "devicon-php-plain",
+            "name": "PHP"
+          },
+          {
+            "class": "devicon-mysql-plain",
+            "name": "MySQL"
+          }
+        ]
+      },
+      {
+        "title": "Security Automation Tool",
+        "startDate": "2021",
+        "description": "Developed a comprehensive web application for security automation, integrating REST APIs for firewall policy configuration and leveraging MongoDB for back-end service construction. Achieved a remarkable 40% increase in operational efficiency while securely integrating with major SaaS tools like O365, GSuite, Box, and Salesforce.",
+        "images": [
+          "images/portfolio/security-automation/security-automation.png",
+          "images/portfolio/security-automation/web-application-firewall.png"
+        ],
+        "url": "",
+        "technologies": [
+          {
+            "class": "devicon-html5-plain",
+            "name": "HTML"
+          },
+          {
+            "class": "devicon-javascript-plain",
+            "name": "JavaScript"
+          },
+          {
+            "class": "devicon-mongodb-plain",
+            "name": "MongoDB"
+          },
+          {
+            "class": "devicon-python-plain",
+            "name": "Python"
+          }
+        ]
+      },
+      {
+        "title": "Face Mask Detection System",
+        "startDate": "2020",
+        "description": "Spearheaded the creation of a sophisticated face mask detection system using deep learning and computer vision techniques. Integrated it into a web platform using the Django framework to ensure compliance with COVID-19 protocols, resulting in accurate mask detection and streamlined enforcement measures.",
+        "images": [
+          "images/portfolio/face-mask/project3.png",
+          "images/portfolio/face-mask/project4.jpg"
+        ],
+        "url": "https://github.com/abho11/maskdet",
+        "technologies": [
+          {
+            "class": "devicon-opencv-plain",
+            "name": "Computer Vision"
+          },
+          {
+            "class": "devicon-django-plain",
+            "name": "Django Framework"
+          },
+          {
+            "class": "devicon-javascript-plain",
+            "name": "JavaScript"
+          },
+          {
+            "class": "devicon-html5-plain",
+            "name": "HTML"
+          },
+          {
+            "class": "devicon-firebase-plain",
+            "name": "Firebase"
+          }
+        ]
+      }
+    ],
+    "experience": [
+      {
+        "company": "University of Utah Campus Store",
+        "title": "Frontend Developer Intern",
+        "years": "07.2023 - present",
+
+        "technologies": [
+          "NetSuite",
+          "REST API",
+          "HTML/CSS",
+          "JavaScript",
+          "Bootstrap",
+          "Ecommerce",
+          "Node",
+          "React",
+          "PHP"
+        ]
+      },
+      {
+        "company": "IBM",
+        "title": "Technical Consultant",
+        "years": "08.2021 - 11.2022",
+        "technologies": [
+          "Django",
+          "PHP",
+          "JavaScript",
+          "Scrum",
+          "ServiceNow",
+          "QRadar",
+          "Linux"
+        ]
+      },
+      {
+        "company": "IBM",
+        "title": "Security Analyst Intern",
+        "years": "02.2021 - 07.2021",
+        "technologies": [
+          "Django",
+          "Python",
+          "JavaScript",
+          "HTML/CSS",
+          "Cisco ASA",
+          "PaloAlto",
+          "RestAPI"
+        ]
+      }
+    ]
+  }
