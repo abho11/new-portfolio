@@ -1,7 +1,6 @@
 {
     "basic_info": {
-      "description_header": "Hello!",
-      "description": "I'm a dedicated frontend developer with expertise in Python, JavaScript, and ReactJS. Pursuing a Master's in Information Systems at the University of Utah, I'm driven by a passion for the latest web frameworks. Outside coding, I find joy in nature photography and indulge in competitive gaming with League of Legends. I thrive on blending technical innovation with creative pursuits.",
+      "description": "I'm an Information Systems graduate student at the University of Utah with a strong focus on front-end development using Python, JavaScript, and ReactJS. Alongside my studies, I apply the same strategic thinking to my love for football and gaming. As a Manchester United fan, I understand teamwork and dedication, which I bring to my development projects. Outside coding, I enjoy nature photography, capturing moments that remind me of the importance of detail and focus in my work. Whether coding or gaming, I'm always aiming for precision and impact.",
       "section_name": {
         "about": "About me",
         "projects": "Projects",
