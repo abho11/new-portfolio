@@ -137,6 +137,9 @@ body[data-theme="dark"] {
 
    #skills{
       background: #1a1a1a;
+      .section-title {
+         color: white !important;
+      }
    }
 
    #resume {
