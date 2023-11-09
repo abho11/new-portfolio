@@ -66,6 +66,120 @@ header {
 	padding-top: 150px;
 	padding-bottom: 0;
 }
+
+header h1{
+	font-family: 'Montserrat', sans-serif!important;
+}
+
+.navbar {
+	position: absolute!important;
+	top: 10px;
+	right: 10px;
+	padding: 20px!important;
+}
+
+.nav-list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+
+.nav-list li {
+	padding: 5px 25px;
+}
+
+.nav-list li a {
+	text-decoration: none;
+	font-family: 'Montserrat', sans-serif;
+	border-radius: 10px;
+	color: #000000;
+	font-size: 1.6rem;
+	transition: 0.4s; /* Smooth transition for hover effect */
+}
+
+.nav-list li a:hover {
+	background-color: #000000; /* Background color on hover */
+	color: #ffffff; /* Text color on hover */
+	padding: 10px;
+}
+
+.hamburger-menu {
+	display: none;
+	cursor: pointer;
+	font-size: 32px;
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	z-index: 1002;
+}
+
+.nav.mobile-nav {
+	position: fixed;
+	top: 0;
+	right: -300px;
+	width: 300px;
+	height: 100vh;
+	background-color: #24282c;
+	transition: 0.3s;
+	z-index: 1001;
+	opacity: 96%;
+	display: inline;
+}
+
+.nav.mobile-nav .close-btn {
+	align-self: flex-end;
+	cursor: pointer;
+	font-size: 35px;
+	color: white;
+	position: absolute;
+	top: 0px;
+	right: 20px;
+	z-index: 1002;
+}
+
+.nav.mobile-nav a {
+	text-align: right;
+	padding: 21px 15px;
+	border-bottom: 1px solid #e1e1e1;
+	display: block;
+	color: #ffffff;
+	text-decoration: none;
+	position: relative;
+	top: 60px;
+	font-size: large;
+	font-family: 'Montserrat', sans-serif!important;
+}
+
+.nav.mobile-nav a:hover {
+	background-color: transparent;
+}
+
+.nav.mobile-nav.open {
+	right: 0;
+	box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.3);
+	z-index: 1002;
+	display: none;
+}
+
+/* Responsive styles */
+@media (max-width: 580px) {
+	.hamburger-menu {
+		display: block;
+	}
+
+	.nav-list {
+		display: none;
+	}
+
+	.nav.mobile-nav.open {
+		display: block;
+	}
+}
+
+.header{
+	min-height: 100vh;
+}
 .header-content {
 	position: absolute;
 	top: -150px;
@@ -309,7 +423,7 @@ header {
 	}
 
 	header h1 {
-		font-size: 200%!important;
+		font-size: 180%!important;
 	}
 
 	.title-styles {
@@ -322,7 +436,7 @@ header {
 	}
 
 	.react-switch{
-		top: -5px!important;
+		top: -3px!important;
 
 	}
 	.react-switch-handle{
@@ -338,6 +452,19 @@ header {
 	#sun{
 		height: 20px!important;
 		width: 20px!important;
+	}
+
+	.hamburger-menu {
+		cursor: pointer;
+		font-size: 32px;
+		position: absolute;
+		top: 20px;
+		right: 20px;
+		z-index: 1002;
+	}
+
+	.polaroid span{
+		margin-left: 76px!important;
 	}
 
 }
@@ -361,7 +488,7 @@ header {
 }
 
 .skills-tile {
-	background-color: transparentize(#F8F5F4, 0.95);
+	background-color: #232323;
 	padding: 10px 10px 5px 10px;
 	width: 100px;
 	margin: 5px 0 5px 0;
@@ -469,13 +596,24 @@ header h1 {
 
 .polaroid img {
 	display: block;
-	max-width: 200px;
+	max-width: 350px;
+	max-height: 400px;
+}
+
+.polaroid {
+	/* Other styling for polaroid */
+	transition: transform 0.2s; /* Smooth transform */
+}
+
+.polaroid:hover {
+	transform: scale(1.1); /* Adjust scale as needed */
 }
 
 .polaroid span {
 	background: #ffffff;
 	display: inline-block;
-	margin: 55px 75px 30px;
+	margin: 65px 75px 30px;
+	margin-left: 100px;
 	padding: 15px 15px 30px;
 	text-align: center;
 	text-decoration: none;
@@ -516,7 +654,7 @@ header h1 {
 }
 
 #resume {
-	background: #efe1bd;
+	background: #afd6e8;
 }
 
 .experience-icon {
@@ -638,7 +776,7 @@ header h1 {
 }
 
 #portfolio {
-	background: #efe1bd;
+	background: #afd6e8;
 	padding-bottom: 5%;
 }
 
@@ -664,6 +802,10 @@ header h1 {
 	font-size: 1.5rem;
 }
 
+.vertical-timeline-element-icon {
+	background: #3d3d3d!important;
+}
+
 @media (min-width: 576px) {
 	.portfolio .closeButtonResponsive {
 		display: block;
@@ -674,7 +816,7 @@ header h1 {
 }
 
 #skills {
-	background: #1F1F1F;
+	background: white;
 	min-height: 200px;
 	width: 100%;
 	overflow: hidden;
@@ -687,7 +829,7 @@ header h1 {
 	font: 18px/24px 'opensans-bold', sans-serif;
 	text-transform: uppercase;
 	letter-spacing: 3px;
-	color: #fff;
+	color: #000000!important;
 	text-align: center;
 }
 

@@ -1,8 +1,9 @@
 import React, { Component } from "react";
 import { Icon } from "@iconify/react";
-import angularIcon from "@iconify/icons-logos/angular-icon";
-import reactIcon from "@iconify/icons-logos/react";
-import vueIcon from "@iconify/icons-logos/vue";
+import gamingIcon from '@iconify/icons-maki/gaming';
+import footballOutline from '@iconify/icons-ion/football-outline';
+import logoDev from '@iconify/icons-material-symbols/logo-dev';
+
 
 class About extends Component {
   render() {
@@ -11,36 +12,35 @@ class About extends Component {
     }
     if (this.props.resumeBasicInfo) {
       var sectionName = this.props.resumeBasicInfo.section_name.about;
-      var hello = this.props.resumeBasicInfo.description_header;
       var about = this.props.resumeBasicInfo.description;
     }
 
     return (
       <section id="about">
         <div className="col-md-12">
-          <h1 style={{ color: "black" }}>
+          <h1 style={{ color: "black" , fontSize: "25px" }}>
             <span>{sectionName}</span>
           </h1>
           <div className="row center mx-auto mb-5">
             <div className="col-md-4 mb-5 center">
               <div className="polaroid">
-                <span style={{ cursor: "auto" }}>
+                <span style={{ cursor: "pointer" }}>
                   <img
-                    height="250px"
-                    src={profilepic}
-                    alt="Avatar placeholder"
+
+                      src={profilepic}
+                      alt="Avatar placeholder"
+                  />
+                   <Icon
+                       icon={gamingIcon}
+                       style={{ fontSize: "400%", margin: "9% 5% 0 5%" }}
+                   />
+                  <Icon
+                      icon={footballOutline}
+                      style={{ fontSize: "400%", margin: "9% 5% 0 5%" }}
                   />
                   <Icon
-                    icon={angularIcon}
-                    style={{ fontSize: "400%", margin: "9% 5% 0 5%" }}
-                  />
-                  <Icon
-                    icon={reactIcon}
-                    style={{ fontSize: "400%", margin: "9% 5% 0 5%" }}
-                  />
-                  <Icon
-                    icon={vueIcon}
-                    style={{ fontSize: "400%", margin: "9% 5% 0 5%" }}
+                      icon={logoDev}
+                      style={{ fontSize: "400%", margin: "9% 5% 0 5%" }}
                   />
                 </span>
               </div>
@@ -72,14 +72,11 @@ class About extends Component {
                     className="card-body font-trebuchet text-justify ml-3 mr-3"
                     style={{
                       height: "auto",
-                      fontSize: "132%",
+                      fontSize: "150%",
                       lineHeight: "200%",
                     }}
                   >
-                    <br />
-                    <span className="wave">{hello} :) </span>
-                    <br />
-                    <br />
+                    <br/>
                     {about}
                   </div>
                 </div>

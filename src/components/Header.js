@@ -1,20 +1,38 @@
 import React, { Component } from "react";
 import Typical from "react-typical";
 import Switch from "react-switch";
+import { FiMenu } from 'react-icons/fi';
 
 class Header extends Component {
   titles = [];
 
   constructor() {
     super();
-    this.state = { checked: false };
+    this.state = { checked: false,  isMobileNavOpen: false};
     this.onThemeSwitchChange = this.onThemeSwitchChange.bind(this);
+      this.closeMobileNav = this.closeMobileNav.bind(this);
   }
 
   onThemeSwitchChange(checked) {
     this.setState({ checked });
     this.setTheme();
   }
+
+    toggleMobileNav = () => {
+        this.setState(prevState => ({
+            isMobileNavOpen: !prevState.isMobileNavOpen
+        }));
+    }
+
+    closeMobileNav() {
+        this.setState({ isMobileNavOpen: false });
+    }
+
+    renderNavItem(href, text) {
+        return (
+            <a href={href} onClick={this.closeMobileNav}>{text}</a>
+        );
+    }
 
   setTheme() {
     var dataThemeAttribute = "data-theme";
@@ -30,6 +48,8 @@ class Header extends Component {
       this.titles = this.props.sharedData.titles.map(x => [ x.toUpperCase(), 1500 ] ).flat();
     }
 
+      const { isMobileNavOpen } = this.state;
+
     const HeaderTitleTypeAnimation = React.memo( () => {
       return <Typical className="title-styles" steps={this.titles} loop={50} />
     }, (props, prevProp) => true);
@@ -37,6 +57,25 @@ class Header extends Component {
     return (
         <section className={'header'}>
       <header id="home" style={{ height: window.innerHeight - 140, display: 'block' }}>
+          <nav className="navbar">
+              <ul className="nav-list">
+                  <li><a href="#about">ABOUT</a></li>
+                  <li><a href="#portfolio">PROJECTS</a></li>
+                  <li><a href="#skills">SKILLS</a></li>
+                  <li><a href="#resume">EXPERIENCE</a></li>
+              </ul>
+          </nav>
+
+          <FiMenu className="hamburger-menu" onClick={this.toggleMobileNav} />
+          <div className={`nav mobile-nav ${isMobileNavOpen ? 'open' : ''}`}>
+              <div className="close-btn" onClick={this.toggleMobileNav}>&times;</div>
+
+                  <a href="#about" onClick={this.closeMobileNav} >ABOUT</a>
+                  <a href="#portfolio" onClick={this.closeMobileNav}>PROJECTS</a>
+                  <a href="#skills" onClick={this.closeMobileNav}>SKILLS</a>
+                  <a href="#resume" onClick={this.closeMobileNav}>EXPERIENCE</a>
+
+          </div>
         <div className="row aligner" style={{height: '100%'}}>
           <div className="col-md-12">
             <div className="header-content">

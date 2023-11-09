@@ -28,7 +28,7 @@ class Experience extends Component {
               color: "#fff",
               textAlign: "center",
             }}
-            icon={<i className="fab fa-react experience-icon"></i>}
+            icon={<i className="fab fa-dev experience-icon"></i>}
             key={i}
           >
 
@@ -55,7 +55,7 @@ class Experience extends Component {
       <section id="resume" className="pb-5">
         <div className="col-md-12 mx-auto">
           <div className="col-md-12">
-            <h1 className="section-title" style={{ color: "black" }}>
+              <h1 className="section-title" style={{ color: "black" , fontSize: "25px" }}>
               <span className="text-black" style={{ textAlign: "center" }}>
                 {sectionName}
               </span>

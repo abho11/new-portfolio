@@ -45,7 +45,7 @@ class App extends Component {
       cache: false,
       success: function(data) {
         this.setState({ sharedData: data });
-        document.title = `${this.state.sharedData.basic_info.name}`;
+
         if (this.state.sharedData.basic_info.resume_file) {
           this.loadResumeFromPath(this.state.sharedData.basic_info.resume_file);
         }

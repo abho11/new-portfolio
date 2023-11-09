@@ -26,7 +26,7 @@ const ProjectCard = ({ project, showModal }) => {
             <img
                 src={project.images[0]}
                 alt="projectImages"
-                height="230"
+                height="200"
                 style={{ marginBottom: 0, paddingBottom: 0, position: 'relative' }}
             />
             <span className="project-date">{project.startDate}</span>
@@ -74,7 +74,7 @@ class Projects extends Component {
     return (
         <section id="portfolio">
           <div className="col-md-12">
-            <h1 className="section-title" style={{ color: "black" }}>
+            <h1 className="section-title" style={{ color: "black" , fontSize: "25px" }}>
               <span>{sectionName}</span>
             </h1>
             <div className="col-md-12 mx-auto">
