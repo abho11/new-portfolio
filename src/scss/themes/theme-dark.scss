@@ -1,6 +1,6 @@
 body[data-theme="dark"] {  
 
-   @import '../src/scss/dark-slider.scss';
+   @import '/src/scss/dark-slider';
 
    .slider-tab {
       background-color: #8C8C8C;
@@ -9,10 +9,17 @@ body[data-theme="dark"] {
    .title-styles {
       color: white;
    }
-
+   #cat{
+      fill: white!important;
+      color: black!important;
+   }
    .header-icon {
-      color: #3C342C;
+      color: #ffffff;
       opacity: 0.8;
+   }
+
+   .header{
+      background-color: black;
    }
 
    .slider-image {
@@ -32,12 +39,20 @@ body[data-theme="dark"] {
       color: white;
    }
 
+
    header {
-      background-color: #494949;
-      h1 {
-         color: white;
-      }
+      background-image: url('dark-bg-test.jpeg');
    }
+
+   .react-switch-bg {
+      background: rgb(77 77 77) !important;
+   }
+
+
+   header h1 {
+         color: white;
+   }
+
 
    #about {
       background-color: #7f7f7f;

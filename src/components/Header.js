@@ -35,10 +35,11 @@ class Header extends Component {
     }, (props, prevProp) => true);
 
     return (
+        <section className={'header'}>
       <header id="home" style={{ height: window.innerHeight - 140, display: 'block' }}>
         <div className="row aligner" style={{height: '100%'}}>
           <div className="col-md-12">
-            <div>
+            <div className="header-content">
               <span className="iconify header-icon" data-icon="la:laptop-code" data-inline="false"></span>
               <br/>
               <h1 className="mb-0">
@@ -56,22 +57,22 @@ class Header extends Component {
                 width={90}
                 height={40}
                 uncheckedIcon={
-                  <span
+                  <span id={'moon'}
                     className="iconify"
-                    data-icon="twemoji:owl"
+                    data-icon="material-symbols-light:dark-mode"
                     data-inline="false"
                     style={{
                       display: "block",
                       height: "100%",
-                      fontSize: 25,
+                      fontSize: 35,
                       textAlign: "end",
                       marginLeft: "20px",
-                      color: "#353239",
+                      color: "black",
                     }}
                   ></span>
                 }
                 checkedIcon={
-                  <span
+                  <span id={'sun'}
                     className="iconify"
                     data-icon="noto-v1:sun-with-face"
                     data-inline="false"
@@ -91,6 +92,7 @@ class Header extends Component {
           </div>
         </div>
       </header>
+        </section>
     );
   }
 }

@@ -1,5 +1,7 @@
-@import './scss/dark-slider.scss'; // Adjust the path as needed
-@import './scss/light-slider.scss'; // Adjust the path as needed
+@import '/src/scss/themes/theme-dark';
+@import '/src/scss/dark-slider';
+@import '/src/scss/themes/theme-light';
+@import '/src/scss/light-slider';
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;300&display=swap');
 
 html {
@@ -7,6 +9,16 @@ html {
 	-webkit-font-smoothing: antialiased;
 	margin: 0;
 	padding: 0;
+}
+
+body{
+	overflow-x: hidden!important;
+}
+@media (min-width: 768px) { /* This is a common breakpoint for tablets and larger devices */
+	.header {
+		width: 100vw; /* 100% of the viewport width */
+		height: 100vh; /* 100% of the viewport height */
+	}
 }
 
 .aligner {
@@ -21,30 +33,314 @@ html {
 
 .title-styles {
 	font-family: 'Raleway', sans-serif;
-	font-size: 250%;
+	font-size: 220%;
 }
 
 .header-icon {
-	height: 150px;
-	width: 150px;
+	width: 100px;
+	height: 100px;
+	transition: transform 0.5s ease; /* Smooth transition for transform */
 }
+
+.iconify.header-icon {
+	display: inline-block; /* Required for transform to work */
+}
+
+.iconify.header-icon:hover {
+	transform: scale(1.2)!important; /* Rotate 180 degrees and scale up on hover */
+}
+
 
 header {
 	position: relative;
-	height: 520px;
+	height: 704px!important;
 	min-height: 450px;
 	width: 100%;
+	background-image: url("../public/images/light-bg.jpg");
 	background-size: cover;
-	-webkit-background-size: cover;
+	background-position: center;
 	text-align: center;
 	overflow: hidden;
-	background-color: #e9d5a1;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
 	padding-top: 150px;
 	padding-bottom: 0;
+}
+.header-content {
+	position: absolute;
+	top: -150px;
+	left: 49%;
+	transform: translate(-50%, -50%);
+	width: 100%;
+	padding: 0 15px; /* Give some space on small screens */
+}
+.react-switch-bg{
+	background: rgb(176 176 174)!important;
+}
+
+.react-switch{
+	top: 58px;
+}
+
+@media (max-width: 1300px) and (min-width: 1128px) {
+
+	.header-icon {
+		width: 80px;
+		height: 80px;
+	}
+
+	header h1 {
+		font-size: 300%!important;
+	}
+
+	.title-styles {
+		font-size: 180%;
+	}
+	.react-switch-bg{
+		background: rgb(176 176 174)!important;
+		height: 30px!important;
+		width: 90px!important;
+	}
+
+	.react-switch{
+		top: 56px;
+
+	}
+	.react-switch-handle{
+		height: 29px!important;
+		width: 29px!important;
+	}
+
+	#moon {
+		height: 29px!important;
+		width: 29px!important;
+	}
+
+	#sun{
+		height: 29px!important;
+		width: 29px!important;
+	}
+
+}
+
+@media (max-width: 1128px) and (min-width: 1030px) {
+
+	.header-icon {
+		width: 80px;
+		height: 80px;
+	}
+
+	header h1 {
+		font-size: 290%!important;
+	}
+
+	.title-styles {
+		font-size: 170%;
+	}
+	.react-switch-bg {
+		background: rgb(176 176 174)!important;
+		height: 25px!important;
+		width: 80px!important;
+	}
+
+	.react-switch{
+		top: 52px;
+
+	}
+	.react-switch-handle{
+		height: 25px!important;
+		width: 25px!important;
+	}
+
+	#moon {
+		height: 29px!important;
+		width: 29px!important;
+	}
+
+	#sun{
+		height: 29px!important;
+		width: 29px!important;
+	}
+
+}
+
+@media (max-width: 1030px) and (min-width: 900px) {
+
+	.header-icon {
+		width: 60px;
+		height: 60px;
+		margin-top: 50px;
+	}
+
+	header h1 {
+		font-size: 250%!important;
+	}
+
+	.title-styles {
+		font-size: 160%;
+	}
+	.react-switch-bg {
+		background: rgb(176 176 174)!important;
+		height: 24px!important;
+		width: 75px!important;
+	}
+
+	.react-switch{
+		top: 40px;
+
+	}
+	.react-switch-handle{
+		height: 24px!important;
+		width: 24px!important;
+	}
+
+	#moon {
+		height: 24px!important;
+		width: 24px!important;
+	}
+
+	#sun{
+		height: 24px!important;
+		width: 24px!important;
+	}
+
+}
+
+
+@media (max-width: 900px) and (min-width: 780px) {
+
+	.header-icon {
+		width: 60px;
+		height: 60px;
+		margin-top: 50px;
+	}
+
+	header h1 {
+		font-size: 210%!important;
+	}
+
+	.title-styles {
+		font-size: 140%;
+	}
+	.react-switch-bg {
+		background: rgb(176 176 174)!important;
+		height: 23px!important;
+		width: 75px!important;
+	}
+
+	.react-switch{
+		top: 40px;
+
+	}
+	.react-switch-handle{
+		height: 23px!important;
+		width: 23px!important;
+	}
+
+	#moon {
+		height: 23px!important;
+		width: 23px!important;
+	}
+
+	#sun{
+		height: 23px!important;
+		width: 23px!important;
+	}
+
+}
+
+
+@media (max-width: 780px) and (min-width: 480px)  {
+
+	.header-icon {
+		width: 60px;
+		height: 60px;
+		margin-top: 70px;
+	}
+
+	header h1 {
+		font-size: 200%!important;
+	}
+
+	.title-styles {
+		font-size: 130%;
+	}
+	.react-switch-bg {
+		background: rgb(176 176 174)!important;
+		height: 22px!important;
+		width: 75px!important;
+	}
+
+	.react-switch{
+		top: 30px;
+
+	}
+	.react-switch-handle{
+		height: 22px!important;
+		width: 22px!important;
+	}
+
+	#moon {
+		height: 22px!important;
+		width: 22px!important;
+	}
+
+	#sun{
+		height: 22px!important;
+		width: 22px!important;
+	}
+
+}
+
+@media (max-width: 480px)  {
+
+	header {
+		background-image: url("../public/images/light-bg.jpg");
+		height: 100%!important;
+		background-position: -80px!important;
+	}
+
+	.header-content{
+		top: 15px;
+		left: 63%;
+	}
+
+	.header-icon {
+		width: 60px;
+		height: 60px;
+		margin-top: 70px;
+	}
+
+	header h1 {
+		font-size: 200%!important;
+	}
+
+	.title-styles {
+		font-size: 120%;
+	}
+	.react-switch-bg {
+		background: rgb(176 176 174)!important;
+		height: 22px!important;
+		width: 75px!important;
+	}
+
+	.react-switch{
+		top: -5px;
+
+	}
+	.react-switch-handle{
+		height: 20px!important;
+		width: 20px!important;
+	}
+
+	#moon {
+		height: 20px!important;
+		width: 20px!important;
+	}
+
+	#sun{
+		height: 20px!important;
+		width: 20px!important;
+	}
+
 }
 
 .language-icon {
@@ -82,7 +378,7 @@ display: none;
 }
 
 header h1 {
-	font-size: 400%;
+	font-size: 350%;
 	text-align: center;
 	font-weight: 600 !important;
 	color: #353239;
