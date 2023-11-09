@@ -1,0 +1,79 @@
+{
+  "basic_info": {
+    "name": "Hello! I'm Arunabh Roy",
+    "titles": [
+      "Frontend Developer",
+      "UI/UX Designer",
+      "DevOps and Security Enthusiast",
+      "E-Commerce Web Developer",
+      "Masters in Information Systems"
+    ],
+    "social": [
+      {
+        "name": "github",
+        "url": "https://github.com/abho11",
+        "class": "fab fa-github"
+      },
+      {
+        "name": "instagram",
+        "url": "https://www.linkedin.com/in/arunabh-roy/",
+        "class": "fab fa-linkedin"
+      }
+    ],
+    "image": "myProfile.jpg"
+  },
+  "skills": {
+    "icons": [
+      {
+        "name": "ReactJS",
+        "class": "devicon-react-original",
+        "level": "90"
+      },
+      {
+        "name": "NodeJS",
+        "class": "devicon-nodejs-plain",
+        "level": "85"
+      },
+      {
+        "name": "Angular",
+        "class": "devicon-angularjs-plain",
+        "level": "80"
+      },
+      {
+        "name": "Python",
+        "class": "devicon-python-plain",
+        "level": "85"
+      },
+      {
+        "name": "SQL/NoSQL",
+        "class": "devicon-mongodb-plain",
+        "level": "95"
+      },
+      {
+        "name": "AWS",
+        "class": "devicon-amazonwebservices-plain",
+        "level": "80"
+      },
+      {
+        "name": "JavaScript",
+        "class": "devicon-javascript-plain",
+        "level": "90"
+      },
+      {
+        "name": "HTML5",
+        "class": "devicon-html5-plain",
+        "level": "95"
+      },
+      {
+        "name": "CSS3",
+        "class": "devicon-css3-plain",
+        "level": "95"
+      },
+      {
+        "name": "Sass",
+        "class": "devicon-sass-plain",
+        "level": "90"
+      }
+    ]
+  }
+}
