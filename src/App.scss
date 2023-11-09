@@ -50,7 +50,9 @@ body{
 	transform: scale(1.2)!important; /* Rotate 180 degrees and scale up on hover */
 }
 
-
+.react-switch{
+	top: 65px!important;
+}
 header {
 	position: relative;
 	height: 704px!important;
@@ -76,9 +78,6 @@ header {
 	background: rgb(176 176 174)!important;
 }
 
-.react-switch{
-	top: 58px;
-}
 
 @media (max-width: 1300px) and (min-width: 1128px) {
 
@@ -101,7 +100,7 @@ header {
 	}
 
 	.react-switch{
-		top: 56px;
+		top: 60px!important;
 
 	}
 	.react-switch-handle{
@@ -142,7 +141,7 @@ header {
 	}
 
 	.react-switch{
-		top: 52px;
+		top: 52px!important;
 
 	}
 	.react-switch-handle{
@@ -184,7 +183,7 @@ header {
 	}
 
 	.react-switch{
-		top: 40px;
+		top: 40px!important;
 
 	}
 	.react-switch-handle{
@@ -227,7 +226,7 @@ header {
 	}
 
 	.react-switch{
-		top: 40px;
+		top: 40px!important;
 
 	}
 	.react-switch-handle{
@@ -270,7 +269,7 @@ header {
 	}
 
 	.react-switch{
-		top: 30px;
+		top: 30px!important;
 
 	}
 	.react-switch-handle{
@@ -323,7 +322,7 @@ header {
 	}
 
 	.react-switch{
-		top: -5px;
+		top: -5px!important;
 
 	}
 	.react-switch-handle{
