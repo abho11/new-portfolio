@@ -193,6 +193,88 @@ header h1{
 }
 
 
+@media (min-width: 1420px){
+
+	header {
+		height: auto!important;
+	}
+
+}
+
+@media (max-width: 1420px) and (min-width: 1300px) {
+	.react-switch-bg{
+		height: 33px!important;
+		width: 90px!important;
+	}
+
+	.react-switch-handle{
+		height: 31px!important;
+		width: 31px!important;
+	}
+
+	.react-switch{
+		top: 55px!important;
+	}
+
+}
+
+@media (max-width: 1547px) and (min-width: 1420px) {
+	.react-switch-bg{
+		height: 33px!important;
+		width: 90px!important;
+	}
+
+	.react-switch-handle{
+		height: 31px!important;
+		width: 31px!important;
+	}
+
+	.react-switch{
+		top: 63px!important;
+	}
+
+}
+
+@media (max-width: 1638px) and (min-width: 1547px) {
+	.react-switch-bg{
+		height: 33px!important;
+		width: 90px!important;
+	}
+
+	.react-switch-handle{
+		height: 31px!important;
+		width: 31px!important;
+	}
+
+	.react-switch{
+		top: 70px!important;
+	}
+
+}
+
+@media (max-width: 1700px) and (min-width: 1638px) {
+	.react-switch-bg{
+		height: 40px!important;
+		width: 90px!important;
+	}
+
+	.react-switch-handle{
+		height: 35px!important;
+		width: 35px!important;
+	}
+
+	.react-switch{
+		top: 75px!important;
+	}
+
+}
+
+@media (min-width: 1700px) {
+	.react-switch{
+		top: 88px!important;
+	}
+
+}
 @media (max-width: 1300px) and (min-width: 1128px) {
 
 	.header-icon {
