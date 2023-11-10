@@ -15,9 +15,19 @@
         "class": "fab fa-github"
       },
       {
-        "name": "instagram",
+        "name": "linkedin",
         "url": "https://www.linkedin.com/in/arunabh-roy/",
         "class": "fab fa-linkedin"
+      },
+      {
+        "name": "email",
+        "url": "https://github.com/abho11",
+        "class": "fab fa-email"
+      },
+      {
+        "name": "phone",
+        "url": "https://github.com/abho11",
+        "class": "fab fa-call"
       }
     ],
     "image": "myProfile.jpeg"
