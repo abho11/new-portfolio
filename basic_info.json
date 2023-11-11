@@ -21,13 +21,13 @@
       },
       {
         "name": "email",
-        "url": "https://github.com/abho11",
-        "class": "fab fa-email"
+        "url": "mailto:royarunabh121@gmail.com",
+        "class": "fab fa-google"
       },
       {
         "name": "phone",
-        "url": "https://github.com/abho11",
-        "class": "fab fa-call"
+        "url": "tel:6506649524",
+        "class": "fas fa-phone"
       }
     ],
     "image": "myProfile.jpeg"

@@ -17,7 +17,7 @@
           "images/portfolio/ecommerce/project1.jpg",
           "images/portfolio/ecommerce/project2.png"
         ],
-        "url": "",
+        "url": "https://github.com/abho11/suburban-outfitters",
         "technologies": [
           {
             "class": "devicon-react-original",
@@ -46,8 +46,8 @@
         "startDate": "2021",
         "description": "Developed a comprehensive web application for security automation, integrating REST APIs for firewall policy configuration and leveraging MongoDB for back-end service construction. Achieved a remarkable 40% increase in operational efficiency while securely integrating with major SaaS tools like O365, GSuite, Box, and Salesforce.",
         "images": [
-          "images/portfolio/security-automation/security-automation.png",
-          "images/portfolio/security-automation/web-application-firewall.png"
+          "images/portfolio/security-automation/web-application-firewall.jpeg",
+          "images/portfolio/security-automation/security-automation.png"
         ],
         "url": "",
         "technologies": [
@@ -74,7 +74,7 @@
         "startDate": "2020",
         "description": "Spearheaded the creation of a sophisticated face mask detection system using deep learning and computer vision techniques. Integrated it into a web platform using the Django framework to ensure compliance with COVID-19 protocols, resulting in accurate mask detection and streamlined enforcement measures.",
         "images": [
-          "images/portfolio/face-mask/project3.png",
+          "images/portfolio/face-mask/project3.jpeg",
           "images/portfolio/face-mask/project4.jpg"
         ],
         "url": "https://github.com/abho11/maskdet",
