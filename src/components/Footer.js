@@ -15,14 +15,14 @@ class Footer extends Component {
     }
 
     return (
-      <footer>
+      <footer id={'contact'}>
         <div className="col-md-12">
           <div className="social-links">{networks}</div>
 
           <div className="copyright py-4 text-center">
             <div className="container">
               <small>
-                Copyright &copy; Arunabh Roy
+                Copyright 2023 &copy; Arunabh Roy
               </small>
             </div>
           </div>

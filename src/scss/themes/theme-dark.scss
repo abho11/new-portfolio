@@ -6,6 +6,14 @@ body[data-theme="dark"] {
       background-color: #8C8C8C;
    }
 
+   .card-header {
+      background-color: #cbcbcb!important;
+   }
+
+   .polaroid span svg{
+      color: #232323;
+   }
+
    .title-styles {
       color: white;
    }
@@ -57,7 +65,7 @@ body[data-theme="dark"] {
 
 
    header {
-      background-image: url('dark-bg-test.jpeg');
+      background-image: url('dark-bg.jpg');
    }
 
    .react-switch-bg {
@@ -140,6 +148,10 @@ body[data-theme="dark"] {
       .section-title {
          color: white !important;
       }
+   }
+
+   .skills-tile {
+      background-color: #3d3d3d;
    }
 
    #resume {

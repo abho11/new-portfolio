@@ -71,6 +71,10 @@ header h1{
 	font-family: 'Montserrat', sans-serif!important;
 }
 
+.card-header {
+	background-color: #232323!important;
+}
+
 .navbar {
 	position: absolute!important;
 	top: 1px;
@@ -189,14 +193,14 @@ header h1{
 	padding: 0 15px; /* Give some space on small screens */
 }
 .react-switch-bg{
-	background: rgb(176 176 174)!important;
+	background: #B3B3B3!important;
 }
 
 
 @media (min-width: 1420px){
 
 	header {
-		height: auto!important;
+		height: 860px!important;
 	}
 
 }
@@ -205,6 +209,26 @@ header h1{
 	.react-switch-bg{
 		height: 33px!important;
 		width: 90px!important;
+		margin-top: -5px!important;
+	}
+
+	.react-switch-handle{
+		height: 28px!important;
+		width: 28px!important;
+	}
+
+	.react-switch{
+		top: 57px!important;
+	}
+
+
+}
+
+@media (max-width: 1540px) and (min-width: 1420px) {
+	.react-switch-bg{
+		height: 33px!important;
+		width: 90px!important;
+		margin-top: -3px!important;
 	}
 
 	.react-switch-handle{
@@ -213,12 +237,12 @@ header h1{
 	}
 
 	.react-switch{
-		top: 55px!important;
+		top: 64px!important;
 	}
 
 }
 
-@media (max-width: 1547px) and (min-width: 1420px) {
+@media (max-width: 1620px) and (min-width: 1540px) {
 	.react-switch-bg{
 		height: 33px!important;
 		width: 90px!important;
@@ -230,29 +254,12 @@ header h1{
 	}
 
 	.react-switch{
-		top: 63px!important;
+		top: 68px!important;
 	}
 
 }
 
-@media (max-width: 1638px) and (min-width: 1547px) {
-	.react-switch-bg{
-		height: 33px!important;
-		width: 90px!important;
-	}
-
-	.react-switch-handle{
-		height: 31px!important;
-		width: 31px!important;
-	}
-
-	.react-switch{
-		top: 70px!important;
-	}
-
-}
-
-@media (max-width: 1700px) and (min-width: 1638px) {
+@media (max-width: 1700px) and (min-width: 1620px) {
 	.react-switch-bg{
 		height: 40px!important;
 		width: 90px!important;
@@ -271,11 +278,12 @@ header h1{
 
 @media (min-width: 1700px) {
 	.react-switch{
-		top: 88px!important;
+		top: 80px!important;
 	}
 
 }
-@media (max-width: 1300px) and (min-width: 1128px) {
+
+@media (max-width: 1244px) and (min-width: 1128px) {
 
 	.header-icon {
 		width: 80px;
@@ -297,6 +305,47 @@ header h1{
 
 	.react-switch{
 		top: 60px!important;
+
+	}
+	.react-switch-handle{
+		height: 29px!important;
+		width: 29px!important;
+	}
+
+	#moon {
+		height: 29px!important;
+		width: 29px!important;
+	}
+
+	#sun{
+		height: 29px!important;
+		width: 29px!important;
+	}
+
+}
+
+@media (max-width: 1300px) and (min-width: 1244px) {
+
+	.header-icon {
+		width: 80px;
+		height: 80px;
+	}
+
+	header h1 {
+		font-size: 300%!important;
+	}
+
+	.title-styles {
+		font-size: 180%;
+	}
+	.react-switch-bg{
+		background: rgb(176 176 174)!important;
+		height: 30px!important;
+		width: 90px!important;
+	}
+
+	.react-switch{
+		top: 64px!important;
 
 	}
 	.react-switch-handle{
@@ -485,7 +534,73 @@ header h1{
 
 }
 
-@media (max-width: 480px)  {
+@media (max-width: 480px) and (min-width: 429px)  {
+	header {
+		background-image: url("../public/images/light-bg.jpg");
+		height: 100%!important;
+		background-position: -55px!important;
+	}
+
+	.header-content{
+		top: 15px;
+		left: 63%;
+	}
+
+	.header-icon {
+		width: 60px;
+		height: 60px;
+		margin-top: 70px;
+	}
+
+	header h1 {
+		font-size: 180%!important;
+	}
+
+	.title-styles {
+		font-size: 120%;
+	}
+	.react-switch-bg {
+		background: rgb(176 176 174)!important;
+		height: 22px!important;
+		width: 75px!important;
+	}
+
+	.react-switch{
+		top: -3px!important;
+
+	}
+	.react-switch-handle{
+		height: 20px!important;
+		width: 20px!important;
+	}
+
+	#moon {
+		height: 20px!important;
+		width: 20px!important;
+	}
+
+	#sun{
+		height: 20px!important;
+		width: 20px!important;
+	}
+
+	.hamburger-menu {
+		cursor: pointer;
+		font-size: 32px;
+		position: absolute;
+		top: 20px;
+		right: 20px;
+		z-index: 1002;
+	}
+
+	.polaroid span{
+		margin-left: 76px!important;
+	}
+
+
+}
+
+@media (max-width: 429px)  {
 
 	header {
 		background-image: url("../public/images/light-bg.jpg");
@@ -596,11 +711,11 @@ header h1 {
 }
 
 .slider-image {
-	border: 5px solid #D7CAAA;
+	border: 5px solid #232323;
 }
 
 .slider-tab {
-	background-color: #D7CAAA;
+	background-color: #232323;
 	height: 25px;
 }
 
@@ -616,6 +731,7 @@ header h1 {
 #about {
 	background: #fff;
 	overflow: hidden;
+	min-height: 100vh;
 }
 
 #about h1 {
@@ -627,9 +743,15 @@ header h1 {
 	text-align: center;
 }
 
+
+
 .foto img {
-	display: block;
-	width: 100%;
+	max-width: 100%;
+	height: auto;
+	display: block; /* This ensures the image doesn't have extra space below it */
+	margin-bottom: 0;
+	padding-bottom: 0;
+	position: relative;
 }
 
 .foto div {
@@ -692,7 +814,7 @@ header h1 {
 }
 
 .polaroid span {
-	background: #ffffff;
+	background: #232323;
 	display: inline-block;
 	margin: 65px 75px 30px;
 	margin-left: 100px;
@@ -707,6 +829,10 @@ header h1 {
 	transition: all .20s linear;
 	z-index: 0;
 	position: relative;
+}
+
+.polaroid span svg{
+	color: white;
 }
 
 .link-href {
@@ -737,6 +863,7 @@ header h1 {
 
 #resume {
 	background: #afd6e8;
+	min-height: 100vh;
 }
 
 .experience-icon {
@@ -750,7 +877,7 @@ header h1 {
 	text-align: left !important;
 	padding: 5px 8px 5px 8px !important;
 	vertical-align: baseline;
-	background-color: #AE944F !important;
+	background-color: #232323 !important;
 	color: white;
 	font-weight: lighter !important;
 	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -860,6 +987,7 @@ header h1 {
 #portfolio {
 	background: #afd6e8;
 	padding-bottom: 5%;
+	min-height: 100vh;
 }
 
 .portfolio-item {
@@ -944,6 +1072,6 @@ footer a:focus {
 }
 
 .social-links {
-	margin-top: 50px;
+	margin-top: 25px;
 	font-size: 22px;
 }

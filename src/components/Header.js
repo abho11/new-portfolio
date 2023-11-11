@@ -63,6 +63,7 @@ class Header extends Component {
                   <li><a href="#portfolio">PROJECTS</a></li>
                   <li><a href="#skills">SKILLS</a></li>
                   <li><a href="#resume">EXPERIENCE</a></li>
+                  <li><a href="#contact">CONTACT</a></li>
               </ul>
           </nav>
 
@@ -74,7 +75,7 @@ class Header extends Component {
                   <a href="#portfolio" onClick={this.closeMobileNav}>PROJECTS</a>
                   <a href="#skills" onClick={this.closeMobileNav}>SKILLS</a>
                   <a href="#resume" onClick={this.closeMobileNav}>EXPERIENCE</a>
-
+                  <a href="#contact" onClick={this.closeMobileNav}>CONTACT</a>
           </div>
         <div className="row aligner" style={{height: '100%'}}>
           <div className="col-md-12">
@@ -82,7 +83,7 @@ class Header extends Component {
               <span className="iconify header-icon" data-icon="la:laptop-code" data-inline="false"></span>
               <br/>
               <h1 className="mb-0">
-                <Typical steps={[name]} wrapper="p" />
+                  <Typical steps={[name]}  />
               </h1>
               <div className="title-container">
                 <HeaderTitleTypeAnimation />

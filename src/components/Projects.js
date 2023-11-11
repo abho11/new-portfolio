@@ -26,7 +26,6 @@ const ProjectCard = ({ project, showModal }) => {
             <img
                 src={project.images[0]}
                 alt="projectImages"
-                height="200"
                 style={{ marginBottom: 0, paddingBottom: 0, position: 'relative' }}
             />
             <span className="project-date">{project.startDate}</span>
