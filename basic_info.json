@@ -2,10 +2,11 @@
   "basic_info": {
     "name": "Hello! I'm Arunabh Roy",
     "titles": [
-      "Frontend Developer",
+      "Web Developer",
       "UI/UX Designer",
+      "Frontend Developer",
       "DevOps and Security Enthusiast",
-      "E-Commerce Web Developer",
+      "E-Commerce Integration",
       "Masters in Information Systems"
     ],
     "social": [
@@ -22,7 +23,7 @@
       {
         "name": "email",
         "url": "mailto:royarunabh121@gmail.com",
-        "class": "fab fa-google"
+        "class": "fas fa-envelope"
       },
       {
         "name": "phone",
