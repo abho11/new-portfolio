@@ -75,6 +75,89 @@ header h1{
 	background-color: #232323!important;
 }
 
+#embedded-badge-1c1e00b2-9d18-48ef-8dde-f583cf0ad2ba {
+	width: 400px!important;
+	height: 250px!important;
+	background: #fff!important;
+}
+
+
+@media (max-width: 768px) {
+	#embedded-badge-1c1e00b2-9d18-48ef-8dde-f583cf0ad2ba {
+		width: 300px!important;
+		height: 300px!important;
+	}
+}
+
+
+
+#embedded-badge-00c0b8bd-10d8-43d6-87e0-c1a0ce47e25d {
+	width: 400px!important;
+	height: 250px!important;
+	background: #fff!important;
+}
+
+
+@media (max-width: 768px) {
+	#embedded-badge-00c0b8bd-10d8-43d6-87e0-c1a0ce47e25d {
+		width: 300px!important;
+		height: 300px!important;
+	}
+}
+
+#embedded-badge-6ce46418-284c-4464-aef6-4ac626879b90 {
+	width: 400px!important;
+	height: 250px!important;
+	background: #fff!important;
+}
+
+
+@media (max-width: 768px) {
+	#embedded-badge-6ce46418-284c-4464-aef6-4ac626879b90 {
+		width: 300px!important;
+		height: 300px!important;
+	}
+}
+
+#embedded-badge-0eec546f-b14f-4266-8435-dba52dacf240 {
+	width: 400px!important;
+	height: 250px!important;
+	background: #fff!important;
+}
+
+
+@media (max-width: 768px) {
+	#embedded-badge-0eec546f-b14f-4266-8435-dba52dacf240 {
+		width: 300px!important;
+		height: 300px!important;
+	}
+}
+
+@media screen and (min-width: 980px) {
+	#cert {
+		gap: 100px;
+		margin-bottom: 80px!important;
+	}
+}
+
+@media (max-width: 980px) and (min-width: 865px) {
+	#cert {
+		margin-bottom: 0px!important;
+	}
+}
+
+@media screen and (max-width: 865px) {
+	#cert {
+		margin-bottom: 0px!important;
+	}
+}
+
+
+
+.fa-aws{
+	font-size: 240%!important;
+}
+
 .navbar {
 	position: absolute!important;
 	top: 1px;
@@ -1027,10 +1110,9 @@ header h1 {
 
 #skills {
 	background: white;
-	min-height: 200px;
+	min-height: 100vh;
 	width: 100%;
 	overflow: hidden;
-	padding-bottom: 10%;
 }
 
 .section-title {
@@ -1048,6 +1130,26 @@ header h1 {
 	color: white;
 	text-align: center;
 	position: relative;
+}
+
+.skill-icon {
+	padding: 0;
+	margin: 0;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap; /* Ensures wrapping on smaller screens */
+}
+
+.skill-icon li {
+	display: flex!important;
+	padding: 5px!important; /* Adjust the space between iframes */
+}
+
+.skill-icon iframe {
+	border: none;
+	max-width: 400px;
+	width: 100%;
+	height: auto;
 }
 
 footer {
