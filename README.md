@@ -1,6 +1,6 @@
-# Portfolio React App - https://arunabhroy.dev/
+# Portfolio React App 
 
-This portfolio React app is a showcase of my development projects and skills. It was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This portfolio React app ( https://arunabhroy.dev/ ) is a showcase of my development projects and skills. It was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Table of Contents
 
