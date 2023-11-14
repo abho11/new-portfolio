@@ -28,7 +28,7 @@
       {
         "name": "phone",
         "url": "tel:6506649524",
-        "class": "fas fa-phone"
+        "class": "fas fa-phone-square-alt"
       }
     ],
     "image": "myProfile.jpeg"

@@ -749,6 +749,15 @@ header h1{
 
 }
 
+.react-switch-handle{
+	transition: transform 0.2s ease-in-out;
+}
+
+.header-icon:hover + .react-switch .react-switch-handle {
+	transform: scale(1.1); /* Example transformation */
+	/* Add other styles to brighten up or change appearance */
+}
+
 .language-icon {
 	font-size: 50px;
 	cursor: pointer;

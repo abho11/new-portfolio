@@ -28,7 +28,7 @@ class Experience extends Component {
               color: "#fff",
               textAlign: "center",
             }}
-            icon={<i className="fab fa-dev experience-icon"></i>}
+            icon={<i className="fad fa-code experience-icon"></i>}
             key={i}
           >
 

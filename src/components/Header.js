@@ -8,10 +8,20 @@ class Header extends Component {
 
   constructor() {
     super();
-    this.state = { checked: false,  isMobileNavOpen: false};
+    this.state = { checked: false,  isMobileNavOpen: false, isHeaderIconHovered: false};
     this.onThemeSwitchChange = this.onThemeSwitchChange.bind(this);
       this.closeMobileNav = this.closeMobileNav.bind(this);
+      this.handleIconHover = this.handleIconHover.bind(this);
+      this.handleIconHoverLeave = this.handleIconHoverLeave.bind(this);
   }
+
+    handleIconHover() {
+        this.setState({ isHeaderIconHovered: true });
+    }
+
+    handleIconHoverLeave() {
+        this.setState({ isHeaderIconHovered: false });
+    }
 
   onThemeSwitchChange(checked) {
     this.setState({ checked });
@@ -43,7 +53,9 @@ class Header extends Component {
   }
 
   render() {
-    if (this.props.sharedData) {
+      const switchHandleStyle = this.state.isHeaderIconHovered ? { transform: 'scale(1.1)' } : null;
+
+      if (this.props.sharedData) {
       var name = this.props.sharedData.name;
       this.titles = this.props.sharedData.titles.map(x => [ x.toUpperCase(), 1500 ] ).flat();
     }
@@ -80,7 +92,8 @@ class Header extends Component {
         <div className="row aligner" style={{height: '100%'}}>
           <div className="col-md-12">
             <div className="header-content">
-              <span className="iconify header-icon" data-icon="la:laptop-code" data-inline="false"></span>
+              <span className="iconify header-icon" data-icon="la:laptop-code" data-inline="false" onMouseEnter={this.handleIconHover}
+                    onMouseLeave={this.handleIconHoverLeave}></span>
               <br/>
               <h1 className="mb-0">
                   <Typical steps={[name]}  />
@@ -89,6 +102,7 @@ class Header extends Component {
                 <HeaderTitleTypeAnimation />
               </div>
               <Switch
+                  handleStyle={switchHandleStyle}
                 checked={this.state.checked}
                 onChange={this.onThemeSwitchChange}
                 offColor="#baaa80"
