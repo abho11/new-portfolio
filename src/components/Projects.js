@@ -11,8 +11,8 @@ const ProjectCard = ({ project, showModal }) => {
 
   return (
       <animated.div
-          className="col-sm-12 col-md-6 col-lg-4"
-          onMouseEnter={() => set({ scale: 1.1 })}
+          className="col-md-6"
+          onMouseEnter={() => set({ scale: 0.9 })}
           onMouseLeave={() => set({ scale: 1 })}
           style={{
             cursor: "pointer",
@@ -71,7 +71,7 @@ class Projects extends Component {
     }
 
     return (
-        <section id="portfolio">
+        <section id="projects">
           <div className="col-md-12">
             <h1 className="section-title" style={{ color: "black" , fontSize: "25px" }}>
               <span>{sectionName}</span>

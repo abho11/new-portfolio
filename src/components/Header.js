@@ -72,9 +72,9 @@ class Header extends Component {
           <nav className="navbar">
               <ul className="nav-list">
                   <li><a href="#about">ABOUT</a></li>
-                  <li><a href="#portfolio">PROJECTS</a></li>
+                  <li><a href="#projects">PROJECTS</a></li>
                   <li><a href="#skills">SKILLS</a></li>
-                  <li><a href="#resume">EXPERIENCE</a></li>
+                  <li><a href="#experience">EXPERIENCE</a></li>
                   <li><a href="#contact">CONTACT</a></li>
               </ul>
           </nav>
@@ -84,9 +84,9 @@ class Header extends Component {
               <div className="close-btn" onClick={this.toggleMobileNav}>&times;</div>
 
                   <a href="#about" onClick={this.closeMobileNav} >ABOUT</a>
-                  <a href="#portfolio" onClick={this.closeMobileNav}>PROJECTS</a>
+                  <a href="#projects" onClick={this.closeMobileNav}>PROJECTS</a>
                   <a href="#skills" onClick={this.closeMobileNav}>SKILLS</a>
-                  <a href="#resume" onClick={this.closeMobileNav}>EXPERIENCE</a>
+                  <a href="#experience" onClick={this.closeMobileNav}>EXPERIENCE</a>
                   <a href="#contact" onClick={this.closeMobileNav}>CONTACT</a>
           </div>
         <div className="row aligner" style={{height: '100%'}}>
