@@ -14,10 +14,34 @@ html {
 body{
 	overflow-x: hidden!important;
 }
-@media (min-width: 768px) { /* This is a common breakpoint for tablets and larger devices */
+
+	#informative-header {
+		text-align: center;
+		display: flex;
+		width: 100%;
+		height: 90px;
+		justify-content: space-between;
+		position: absolute;
+		top: 0px;
+		transition: opacity 0.3s ease, top 0s;
+		z-index: 1001;
+		background: #151513;
+	}
+@media only screen and (max-width: 768px) {
+	#cat {
+		height: 70px;
+		width: 70px;
+	}
+	#informative-header {
+		height: 70px;
+	}
+}
+
+
+@media (min-width: 768px) {
 	.header {
-		width: 100vw; /* 100% of the viewport width */
-		height: 100vh; /* 100% of the viewport height */
+		width: 100vw;
+		height: 100vh;
 	}
 }
 
@@ -167,7 +191,7 @@ header h1{
 
 .nav-list {
 	list-style: none;
-	margin: 0;
+	margin: 9px;
 	padding: 0;
 	display: flex;
 }
@@ -180,14 +204,14 @@ header h1{
 	text-decoration: none;
 	font-family: 'Montserrat', sans-serif;
 	border-radius: 10px;
-	color: #000000;
+	color: #ffffff;
 	font-size: 1.6rem;
 	transition: 0.4s; /* Smooth transition for hover effect */
 }
 
 .nav-list li a:hover {
-	background-color: #000000; /* Background color on hover */
-	color: #ffffff; /* Text color on hover */
+	background-color: #ffffff; /* Background color on hover */
+	color: #000000; /* Text color on hover */
 	padding: 10px;
 }
 
@@ -250,9 +274,10 @@ header h1{
 }
 
 /* Responsive styles */
-@media (max-width: 580px) {
+@media (max-width: 780px) {
 	.hamburger-menu {
 		display: block;
+		color: white;
 	}
 
 	.nav-list {
@@ -734,7 +759,9 @@ header h1{
 		width: 20px!important;
 	}
 
+
 	.hamburger-menu {
+		color: white;
 		cursor: pointer;
 		font-size: 32px;
 		position: absolute;

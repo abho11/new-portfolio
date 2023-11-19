@@ -10,6 +10,10 @@ body[data-theme="dark"] {
       background-color: #cbcbcb!important;
    }
 
+   .hamburger-menu {
+      color: black;
+   }
+
    .polaroid span svg{
       color: #232323;
    }
@@ -18,8 +22,8 @@ body[data-theme="dark"] {
       color: white;
    }
    #cat{
-      fill: white!important;
-      color: black!important;
+      fill: black!important;
+      color: white!important;
    }
    .header-icon {
       color: #ffffff;
@@ -30,22 +34,26 @@ body[data-theme="dark"] {
       background-color: #1a1a1a;
    }
 
-
+   #informative-header {
+      background: white;
+   }
 
    .nav-list li a {
       text-decoration: none;
       font-family: 'Montserrat', sans-serif;
       border-radius: 10px;
-      color: #ffffff;
+      color: black;
       font-size: 1.6rem;
       transition: 0.4s; /* Smooth transition for hover effect */
    }
 
    .nav-list li a:hover {
-      background-color: #ffffff; /* Background color on hover */
-      color: #000000; /* Text color on hover */
+      background-color: black; /* Background color on hover */
+      color: white; /* Text color on hover */
       padding: 10px;
    }
+
+
 
 
    .slider-image {
@@ -108,9 +116,7 @@ body[data-theme="dark"] {
       box-shadow: 2px 0px 5px rgb(255, 255, 255)!important;
    }
 
-   .hamburger-menu {
-      color: white;
-   }
+
 
    .nav.mobile-nav {
       background-color: #ffffff;

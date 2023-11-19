@@ -21,7 +21,39 @@ class App extends Component {
   componentDidMount() {
     this.loadResumeData();
     this.loadSharedData();
+    this.handleScrollSetup();
   }
+
+  handleScrollSetup = () => {
+    let lastScrollTop = 0;
+    window.addEventListener("scroll", function() {
+      let currentScrollTop = window.pageYOffset || document.documentElement.scrollTop;
+      let headerElement = document.getElementById('informative-header');
+
+      if (window.innerWidth >= 0) {
+        if (currentScrollTop === 0) {
+          headerElement.style.opacity = '1';
+          headerElement.style.position = 'absolute'; // Set to absolute when at top
+
+        } else if (currentScrollTop < lastScrollTop) {
+          headerElement.style.transition = 'opacity 0.3s ease, position 0s';
+          headerElement.style.opacity = '1';
+          headerElement.style.position = 'fixed'; // Set to fixed when scrolling up
+
+        } else {
+          headerElement.style.transition = 'opacity 0.3s ease, position 0s';
+          headerElement.style.opacity = '0';
+          headerElement.style.position = 'fixed'; // Keep it fixed when scrolling down
+        }
+      } else {
+        headerElement.style.opacity = '1';
+        headerElement.style.position = 'absolute'; // For wider screens, adjust as needed
+
+      }
+
+      lastScrollTop = currentScrollTop;
+    }, false);
+  };
 
   loadResumeData() {
     const path = `${process.env.PUBLIC_URL}/resume.json`; // Path to your resume.json in the public directory
