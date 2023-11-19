@@ -10,6 +10,62 @@
     },
     "projects": [
       {
+        "title": "eCommerce UI/UX Enhancement",
+        "startDate": "2023",
+        "description": "As a Frontend Developer Intern, I significantly improved the user experience for two key websites, UREDZONE (https://www.uredzone.com/home) and University of Utah Campus Store (https://www.campusstore.utah.edu/utah/home). I executed a complete overhaul of UI/UX designs, employing modern web technologies and best practices in frontend development. This initiative led to a marked increase in user engagement, reduction in bounce rates, and enhanced SEO performance, thereby boosting overall online sales and website traffic.",
+        "images": [
+          "images/portfolio/campus-store/CS.jpeg",
+          "images/portfolio/campus-store/RZ.jpeg"
+        ],
+        "url": "https://www.campusstore.utah.edu/utah/home",
+        "technologies": [
+          {
+            "class": "devicon-react-original",
+            "name": "ReactJS"
+          },
+          {
+            "class": "devicon-html5-plain",
+            "name": "HTML5"
+          },
+          {
+            "class": "devicon-css3-plain",
+            "name": "CSS3"
+          },
+          {
+            "class": "devicon-sass-plain",
+            "name": "SASS"
+          },
+          {
+            "class": "devicon-git-plain",
+            "name": "GIT"
+          },
+          {
+            "class": "devicon-webstorm-plain",
+            "name": "WebStorm"
+          },
+          {
+            "class": "devicon-php-plain",
+            "name": "PHP"
+          },
+          {
+            "class": "devicon-javascript-plain",
+            "name": "JavaScript"
+          },
+          {
+            "class": "devicon-jquery-plain",
+            "name": "JQuery"
+          },
+          {
+            "class": "devicon-laravel-plain",
+            "name": "Laravel"
+          },
+          {
+            "class": "devicon-bootstrap-plain",
+            "name": "Bootstrap"
+          }
+        ]
+      },
+      {
         "title": "Suburban Outfitters",
         "startDate": "2023",
         "description": "Developed a dynamic online shopping and ecommerce platform for Suburban Outfitters, enhancing user convenience, personalized experiences, real-time order tracking, and inventory management. Leveraged React, HTML, CSS, PHP, and MySQL to create a seamless shopping experience for customers.",
@@ -46,7 +102,7 @@
         "startDate": "2021",
         "description": "Developed a comprehensive web application for security automation, integrating REST APIs for firewall policy configuration and leveraging MongoDB for back-end service construction. Achieved a remarkable 40% increase in operational efficiency while securely integrating with major SaaS tools like O365, GSuite, Box, and Salesforce.",
         "images": [
-          "images/portfolio/security-automation/web-application-firewall.jpeg",
+          "images/portfolio/security-automation/web-application-firewall.png",
           "images/portfolio/security-automation/security-automation.png"
         ],
         "url": "",
