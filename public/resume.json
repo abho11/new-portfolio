@@ -68,12 +68,12 @@
       {
         "title": "Suburban Outfitters",
         "startDate": "2023",
-        "description": "Developed a dynamic online shopping and ecommerce platform for Suburban Outfitters, enhancing user convenience, personalized experiences, real-time order tracking, and inventory management. Leveraged React, HTML, CSS, PHP, and MySQL to create a seamless shopping experience for customers.",
+        "description": "Developed a dynamic online shopping and ecommerce platform for Suburban Outfitters, enhancing user convenience, personalized experiences, real-time order tracking, and inventory management. Leveraged PHP, HTML, CSS, JavaScript, and MySQL to create a seamless shopping experience for customers.",
         "images": [
           "images/portfolio/ecommerce/project1.jpg",
           "images/portfolio/ecommerce/project2.png"
         ],
-        "url": "https://github.com/abho11/suburban-outfitters",
+        "url": "https://suburban-outfitters-ecom-23a0b43a3cbe.herokuapp.com/",
         "technologies": [
           {
             "class": "devicon-react-original",
