@@ -73,7 +73,7 @@
           "images/portfolio/ecommerce/project1.jpg",
           "images/portfolio/ecommerce/project2.png"
         ],
-        "url": "https://suburban-outfitters-ecom-23a0b43a3cbe.herokuapp.com/",
+        "url": "http://suburbanoutfitters.shop/",
         "technologies": [
           {
             "class": "devicon-react-original",
