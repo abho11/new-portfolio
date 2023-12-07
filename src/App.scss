@@ -274,7 +274,7 @@ header h1{
 }
 
 /* Responsive styles */
-@media (max-width: 780px) {
+@media (max-width: 850px) {
 	.hamburger-menu {
 		display: block;
 		color: white;
@@ -311,6 +311,17 @@ header h1{
 		height: 860px!important;
 	}
 
+}
+
+@media (max-width: 1000px) and (min-width: 890px) {
+	.nav-list li a {
+		font-size: 13px;
+	}
+}
+@media (max-width: 890px) and (min-width: 850px) {
+	.nav-list li a {
+		font-size: 12px;
+	}
 }
 
 @media (max-width: 1420px) and (min-width: 1300px) {
@@ -1217,14 +1228,15 @@ footer a:focus {
 /* Contact Form Styles */
 #contact {
 	min-height: 100vh;
-
+	background-image: url("scss/themes/contact-bg.jpg");
+	background-size: cover;
 }
 
 .contact-section {
 	max-width: 600px;
 	margin: 20px auto;
 	padding: 20px;
-	background: #afd6e8;
+	background: rgb(63 141 36 / 38%);
 	border: 2px solid black;
 	border-radius: 8px;
 	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -1254,6 +1266,8 @@ footer a:focus {
 	margin-top: 0;
 	font-size: 19px;
 	margin-bottom: 4rem;
+	color:white;
+	font-weight: 600;
 }
 
 #contact form input,
@@ -1265,8 +1279,13 @@ footer a:focus {
 	border-radius: 4px;
 	box-sizing: border-box;
 	font-size: 16px;
-	background-color: #E2E6E6;
+	background-color: rgb(192 226 181 / 98%);
 	color: black;
+}
+
+#contact .section-title{
+	color: white!important;
+
 }
 
 #contact form textarea {
@@ -1291,7 +1310,7 @@ footer a:focus {
 	opacity: 0.8;
 }
 
-.modal-overlay {
+#contact-modal .modal-overlay {
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -1303,7 +1322,7 @@ footer a:focus {
 	justify-content: center;
 }
 
-.modal-content {
+#contact-modal .modal-content {
 	align-items: center;
 	width: 400px!important;
 	height: 150px;
@@ -1313,25 +1332,40 @@ footer a:focus {
 	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
 }
 
-.modal-content p{
+#contact-modal .modal-content p{
 	font-size: 20px;
 	text-align: center;
 	padding: 10px;
 }
 
-.modal-content button{
+#contact-modal .modal-content button{
 	font-size: 15px;
 	width: 90px;
 }
 
 @media (max-width: 660px) {
-	.modal-content {
+	#contact-modal .modal-content {
 		margin-right: 15px;
 		margin-left: 15px;
 	}
-	.modal-content p{
+	#contact-modal .modal-content p{
 		font-size: 17px;
 	}
 }
 
+a:not([href]):not([class]) {
+	color: white!important;
+	text-decoration: none;
+}
 
+a:not([href]):not([class]):hover {
+	color: black!important;
+	cursor: pointer;
+}
+
+@media (max-width: 850px){
+	a:not([href]):not([class]):hover {
+		color: white!important;
+		cursor: pointer;
+	}
+}

@@ -26,11 +26,13 @@ function Contact() {
     };
 
     const Modal = ({ onClose }) => (
+        <div id="contact-modal">
         <div className="modal-overlay">
             <div className="modal-content">
                 <p>Message sent successfully!</p>
                 <button class="submit-button" onClick={onClose}>Close</button>
             </div>
+        </div>
         </div>
     );
 
@@ -38,7 +40,7 @@ function Contact() {
         <section id="contact">
             <h1 className="section-title" style={{ color: "black", fontSize: "25px" }}>
                 <span className="text-black" style={{ textAlign: "center" }}>
-                    CONTACT
+                    CONTACT ME
                 </span>
             </h1>
             <div className="contact-section">

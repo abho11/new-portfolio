@@ -3,31 +3,24 @@ import Typical from "react-typical";
 import Switch from "react-switch";
 import { FiMenu } from 'react-icons/fi';
 
-
 class Header extends Component {
-  titles = [];
+    titles = [];
 
-  constructor() {
-    super();
-    this.state = { checked: false,  isMobileNavOpen: false, isHeaderIconHovered: false};
-    this.onThemeSwitchChange = this.onThemeSwitchChange.bind(this);
-      this.closeMobileNav = this.closeMobileNav.bind(this);
-      this.handleIconHover = this.handleIconHover.bind(this);
-      this.handleIconHoverLeave = this.handleIconHoverLeave.bind(this);
-  }
-
-    handleIconHover() {
-        this.setState({ isHeaderIconHovered: true });
+    constructor() {
+        super();
+        this.state = { checked: false, isMobileNavOpen: false, isHeaderIconHovered: false };
+        this.onThemeSwitchChange = this.onThemeSwitchChange.bind(this);
+        this.closeMobileNav = this.closeMobileNav.bind(this);
+        this.toggleTheme = this.toggleTheme.bind(this);
     }
 
-    handleIconHoverLeave() {
-        this.setState({ isHeaderIconHovered: false });
+    toggleTheme() {
+        this.setState(prevState => ({
+            checked: !prevState.checked
+        }), () => {
+            this.setTheme();
+        });
     }
-
-  onThemeSwitchChange(checked) {
-    this.setState({ checked });
-    this.setTheme();
-  }
 
     toggleMobileNav = () => {
         this.setState(prevState => ({
@@ -35,36 +28,40 @@ class Header extends Component {
         }));
     }
 
+    onThemeSwitchChange() {
+        this.toggleTheme();
+    }
+
+    setTheme() {
+        var dataThemeAttribute = "data-theme";
+        var body = document.body;
+        var newTheme = body.getAttribute(dataThemeAttribute) === "dark" ? "light" : "dark";
+        body.setAttribute(dataThemeAttribute, newTheme);
+    }
+
     closeMobileNav() {
         this.setState({ isMobileNavOpen: false });
     }
 
 
-    renderNavItem(href, text) {
+    renderNavItem(text, onClick) {
         return (
-            <a href={href} onClick={this.closeMobileNav}>{text}</a>
+            /* eslint-disable-next-line jsx-a11y/anchor-is-valid */
+            <a onClick={onClick}>{text}</a>
         );
     }
 
-  setTheme() {
-    var dataThemeAttribute = "data-theme";
-    var body = document.body;
-    var newTheme =
-      body.getAttribute(dataThemeAttribute) === "dark" ? "light" : "dark";
-    body.setAttribute(dataThemeAttribute, newTheme);
-  }
-
   render() {
-      const switchHandleStyle = this.state.isHeaderIconHovered ? { transform: 'scale(1.1)' } : null;
-
       if (this.props.sharedData) {
       var name = this.props.sharedData.name;
       this.titles = this.props.sharedData.titles.map(x => [ x.toUpperCase(), 1500 ] ).flat();
     }
+      const checked = this.state.checked; // Correctly access the checked state
+      const themeSwitchText = checked ? "LIGHT MODE" : "DARK MODE";
 
       const { isMobileNavOpen } = this.state;
 
-    const HeaderTitleTypeAnimation = React.memo( () => {
+      const HeaderTitleTypeAnimation = React.memo( () => {
       return <Typical className="title-styles" steps={this.titles} loop={50} />
     }, (props, prevProp) => true);
 
@@ -96,6 +93,8 @@ class Header extends Component {
 
               <nav className= "navbar">
               <ul className="nav-list">
+
+                  <li>{this.renderNavItem(themeSwitchText, this.toggleTheme)}</li>
                   <li><a href="#about">ABOUT</a></li>
                   <li><a href="#projects">PROJECTS</a></li>
                   <li><a href="#skills">SKILLS</a></li>
@@ -109,13 +108,14 @@ class Header extends Component {
           <FiMenu className="hamburger-menu" onClick={this.toggleMobileNav} />
           <div  className={`nav mobile-nav ${isMobileNavOpen ? 'open' : ''}`}>
               <div className="close-btn" onClick={this.toggleMobileNav}>&times;</div>
-
+                  <li>{this.renderNavItem(themeSwitchText, this.toggleTheme)}</li>
                   <a href="#about" onClick={this.closeMobileNav} >ABOUT</a>
                   <a href="#projects" onClick={this.closeMobileNav}>PROJECTS</a>
                   <a href="#skills" onClick={this.closeMobileNav}>SKILLS</a>
                   <a href="#experience" onClick={this.closeMobileNav}>EXPERIENCE</a>
               <a href="/Resume.pdf" onClick={this.closeMobileNav} target="_blank" rel="noopener noreferrer">RESUME</a>
                   <a href="#contact" onClick={this.closeMobileNav}>CONTACT</a>
+
           </div>
         </div>
 
@@ -132,7 +132,6 @@ class Header extends Component {
                 <HeaderTitleTypeAnimation />
               </div>
               <Switch
-                  handleStyle={switchHandleStyle}
                 checked={this.state.checked}
                 onChange={this.onThemeSwitchChange}
                 offColor="#baaa80"
