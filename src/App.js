@@ -8,6 +8,7 @@ import Experience from "./components/Experience";
 import Projects from "./components/Projects";
 import Skills from "./components/Skills";
 import Contact from "./components/Contact";
+import ReactGA from 'react-ga';
 
 
 class App extends Component {
@@ -23,6 +24,11 @@ class App extends Component {
     this.loadResumeData();
     this.loadSharedData();
     this.handleScrollSetup();
+  }
+
+  initializeReactGA() {
+    ReactGA.initialize('G-6K2QPW4CDD');
+    ReactGA.pageview(window.location.pathname + window.location.search);
   }
 
   handleScrollSetup = () => {
