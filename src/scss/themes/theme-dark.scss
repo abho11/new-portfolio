@@ -200,4 +200,80 @@ body[data-theme="dark"] {
    .close-icon {
       color: white;
    }
+
+   /* Contact Form Styles */
+   #contact {
+      background: #1a1a1a;
+   }
+
+   .contact-section {
+      background: #919191;
+   }
+
+
+   #contact .section-title{
+      color: white!important;
+   }
+
+   @media (max-width: 660px) {
+      .contact-section {
+         margin-right: 15px;
+         margin-left: 15px;
+      }
+   }
+
+   #contact h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #333;
+   }
+
+   #contact form {
+      display: flex;
+      flex-direction: column;
+   }
+
+   .contact-description{
+      text-align: center;
+      margin-top: 0;
+      font-size: 19px;
+      margin-bottom: 4rem;
+   }
+
+   #contact form input,
+   #contact form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid black;
+      border-radius: 4px;
+      box-sizing: border-box;
+      font-size: 16px;
+      background-color: #E2E6E6;
+      color: black;
+   }
+
+   #contact form textarea {
+      height: 100px;
+      resize: vertical;
+   }
+
+   #contact form button {
+      width: auto;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 8px;
+      background-color: #232323;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+      align-self: center;
+      transition: background-color 0.3s ease;
+   }
+
+   footer {
+      background: #3d3d3d;
+   }
+
+
 }

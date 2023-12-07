@@ -3,6 +3,7 @@ import Typical from "react-typical";
 import Switch from "react-switch";
 import { FiMenu } from 'react-icons/fi';
 
+
 class Header extends Component {
   titles = [];
 
@@ -99,6 +100,7 @@ class Header extends Component {
                   <li><a href="#projects">PROJECTS</a></li>
                   <li><a href="#skills">SKILLS</a></li>
                   <li><a href="#experience">EXPERIENCE</a></li>
+                  <li><a href="/Resume.pdf" target="_blank" rel="noopener noreferrer">RESUME</a></li>
                   <li><a href="#contact">CONTACT</a></li>
               </ul>
           </nav>
@@ -112,6 +114,7 @@ class Header extends Component {
                   <a href="#projects" onClick={this.closeMobileNav}>PROJECTS</a>
                   <a href="#skills" onClick={this.closeMobileNav}>SKILLS</a>
                   <a href="#experience" onClick={this.closeMobileNav}>EXPERIENCE</a>
+              <a href="/Resume.pdf" onClick={this.closeMobileNav} target="_blank" rel="noopener noreferrer">RESUME</a>
                   <a href="#contact" onClick={this.closeMobileNav}>CONTACT</a>
           </div>
         </div>
