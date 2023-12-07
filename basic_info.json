@@ -41,12 +41,12 @@
         "level": "90"
       },
       {
-        "name": "NodeJS",
+        "name": "Node.js",
         "class": "devicon-nodejs-plain",
         "level": "85"
       },
       {
-        "name": "Angular",
+        "name": "AngularJS",
         "class": "devicon-angularjs-plain",
         "level": "80"
       },

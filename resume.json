@@ -1,6 +1,6 @@
 {
     "basic_info": {
-      "description": "I am an Information Systems graduate from University of Utah with a strong focus on Frontend Development and eCommerce Integration. Alongside my studies, I apply the same strategic thinking to my love for football and gaming. As a Manchester United fan, I understand teamwork and dedication, which I bring to my development projects. Outside coding, I enjoy nature photography, capturing moments that remind me of the importance of detail and focus in my work. Whether coding or gaming, I'm always aiming for precision, impact and success.",
+      "description": "I am an Information Systems graduate from University of Utah with a strong focus on frontend development and ecommerce integration. Alongside my studies, I apply the same strategic thinking to my love for football and gaming. As a Manchester United fan, I understand teamwork and dedication, which I bring to my development projects. Outside coding, I enjoy nature photography, capturing moments that remind me of the importance of detail and focus in my work. Whether coding or gaming, I'm always aiming for precision, impact and success.",
       "section_name": {
         "about": "About me",
         "projects": "Projects",
@@ -12,7 +12,7 @@
       {
         "title": "eCommerce UI/UX Enhancement",
         "startDate": "2023",
-        "description": "As a Frontend Developer Intern, I significantly improved the user experience for two key websites, UREDZONE (https://www.uredzone.com/home) and University of Utah Campus Store (https://www.campusstore.utah.edu/utah/home). I executed a complete overhaul of UI/UX designs, employing modern web technologies and best practices in frontend development. This initiative led to a marked increase in user engagement, reduction in bounce rates, and enhanced SEO performance, thereby boosting overall online sales and website traffic.",
+        "description": "As a Frontend Developer, I significantly improved the user experience for two key websites, UREDZONE (https://www.uredzone.com/home) and University of Utah Campus Store (https://www.campusstore.utah.edu/utah/home). I executed a complete overhaul of UI/UX designs, employing modern web technologies and best practices in frontend development. This initiative led to a marked increase in user engagement, reduction in bounce rates, and enhanced SEO performance, thereby boosting overall online sales and website traffic.",
         "images": [
           "images/portfolio/campus-store/CS.jpeg",
           "images/portfolio/campus-store/RZ.jpeg"
@@ -53,7 +53,7 @@
           },
           {
             "class": "devicon-jquery-plain",
-            "name": "JQuery"
+            "name": "jQuery"
           },
           {
             "class": "devicon-laravel-plain",
@@ -68,17 +68,13 @@
       {
         "title": "Suburban Outfitters",
         "startDate": "2023",
-        "description": "Developed a dynamic online shopping and ecommerce platform for Suburban Outfitters, enhancing user convenience, personalized experiences, real-time order tracking, and inventory management. Leveraged PHP, HTML, CSS, JavaScript, and MySQL to create a seamless shopping experience for customers.",
+        "description": "Developed a dynamic online shopping and ecommerce platform for Suburban Outfitters, enhancing user convenience, personalized experiences, real-time order tracking, and inventory management. Leveraged PHP, JavaScript, jQuery, Bootstrap and MySQL, to design a seamless shopping experience for customers.",
         "images": [
           "images/portfolio/ecommerce/project1.jpg",
           "images/portfolio/ecommerce/project2.png"
         ],
-        "url": "http://suburbanoutfitters.shop/",
+        "url": "https://thesuburbanoutfitters.com/",
         "technologies": [
-          {
-            "class": "devicon-react-original",
-            "name": "React"
-          },
           {
             "class": "devicon-html5-plain",
             "name": "HTML"
@@ -88,8 +84,20 @@
             "name": "CSS"
           },
           {
+            "class": "devicon-javascript-plain",
+            "name": "JavaScript"
+          },
+          {
             "class": "devicon-php-plain",
             "name": "PHP"
+          },
+          {
+            "class": "devicon-bootstrap-plain",
+            "name": "Bootstrap"
+          },
+          {
+            "class": "devicon-jquery-plain",
+            "name": "jQuery"
           },
           {
             "class": "devicon-mysql-plain",
@@ -98,37 +106,49 @@
         ]
       },
       {
-        "title": "Security Automation Tool",
+        "title": "Security Automation Web Application",
         "startDate": "2021",
-        "description": "Developed a comprehensive web application for security automation, integrating REST APIs for firewall policy configuration and leveraging MongoDB for back-end service construction. Achieved a remarkable 40% increase in operational efficiency while securely integrating with major SaaS tools like O365, GSuite, Box, and Salesforce.",
+        "description": "Led the design and development of an advanced Security Automation Tool at IBM, enhancing organizational security posture and incident response efficiency. The tool was developed using React, Node.js, and integrated with IBM's DevSecOps tools, streamlining security protocols and operational responses.",
         "images": [
           "images/portfolio/security-automation/web-application-firewall.png",
           "images/portfolio/security-automation/security-automation.png"
         ],
-        "url": "",
         "technologies": [
           {
-            "class": "devicon-html5-plain",
-            "name": "HTML"
+            "class": "devicon-react-original",
+            "name": "ReactJS"
+          },
+          {
+            "class": "devicon-nodejs-plain",
+            "name": "Node.js"
           },
           {
             "class": "devicon-javascript-plain",
             "name": "JavaScript"
           },
           {
+            "class": "devicon-kubernetes-plain",
+            "name": "Kubernetes"
+          },
+          {
             "class": "devicon-mongodb-plain",
             "name": "MongoDB"
           },
           {
-            "class": "devicon-python-plain",
-            "name": "Python"
+            "class": "devicon-css3-plain",
+            "name": "CSS"
+          },
+          {
+            "class": "devicon-html5-plain",
+            "name": "HTML"
           }
         ]
       },
+
       {
         "title": "Face Mask Detection System",
         "startDate": "2020",
-        "description": "Spearheaded the creation of a sophisticated face mask detection system using deep learning and computer vision techniques. Integrated it into a web platform using the Django framework to ensure compliance with COVID-19 protocols, resulting in accurate mask detection and streamlined enforcement measures.",
+        "description": "Spearheaded the creation of a sophisticated face mask detection system using deep learning and computer vision techniques. Integrated it into a web platform using the Django framework, leveraging JavaScript, Python, HTML/CSS and MongoDB to ensure compliance with COVID-19 protocols, resulting in accurate mask detection and streamlined enforcement measures.",
         "images": [
           "images/portfolio/face-mask/project3.jpeg",
           "images/portfolio/face-mask/project4.jpg"
@@ -152,6 +172,14 @@
             "name": "HTML"
           },
           {
+            "class": "devicon-css3-plain",
+            "name": "CSS"
+          },
+          {
+            "class": "devicon-mongodb-plain",
+            "name": "MongoDB"
+          },
+          {
             "class": "devicon-firebase-plain",
             "name": "Firebase"
           }
@@ -161,47 +189,56 @@
     "experience": [
       {
         "company": "University of Utah Campus Store",
-        "title": "Frontend Developer Intern",
+        "title": "Frontend Developer",
         "years": "07.2023 - present",
-
         "technologies": [
-          "NetSuite",
-          "REST API",
-          "HTML/CSS",
+          "ReactJS",
+          "Node.js",
           "JavaScript",
+          "HTML/CSS",
+          "Sass",
           "Bootstrap",
-          "Ecommerce",
-          "Node",
-          "React",
+          "Jenkins",
+          "NetSuite",
+          "SuiteScript 2.0",
+          "SuiteCommerce",
+          "REST API",
           "PHP"
         ]
       },
       {
         "company": "IBM",
-        "title": "Technical Consultant",
-        "years": "08.2021 - 11.2022",
+        "title": "Web Developer",
+        "years": "02.2021 - 11.2022",
         "technologies": [
+          "ReactJS",
+          "Node.js",
+          "Angular",
+          "JavaScript",
+          "IBM DevSecOps",
+          "Microservices",
+          "Kubernetes",
           "Django",
           "PHP",
-          "JavaScript",
-          "Scrum",
+          "Linux",
           "ServiceNow",
           "QRadar",
-          "Linux"
+          "Scrum"
         ]
       },
       {
-        "company": "IBM",
-        "title": "Security Analyst Intern",
-        "years": "02.2021 - 07.2021",
+        "company": "NMIT",
+        "title": "Application Developer",
+        "years": "02.2018 - 01.2021",
         "technologies": [
-          "Django",
           "Python",
+          "Django",
           "JavaScript",
           "HTML/CSS",
-          "Cisco ASA",
-          "PaloAlto",
-          "RestAPI"
+          "MySQL",
+          "Deep Learning",
+          "OpenCV",
+          "REST API"
         ]
       }
     ]
