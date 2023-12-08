@@ -25,7 +25,7 @@ body{
 		top: 0px;
 		transition: opacity 0.3s ease, top 0s;
 		z-index: 1001;
-		background: #151513;
+		background: #000000ba;
 	}
 @media only screen and (max-width: 768px) {
 	#cat {
@@ -231,7 +231,7 @@ header h1{
 	right: -300px;
 	width: 300px;
 	height: 100vh;
-	background-color: #24282c;
+	background-color: #000000d4;
 	transition: 0.3s;
 	z-index: 1001;
 	opacity: 96%;
@@ -1368,4 +1368,8 @@ a:not([href]):not([class]):hover {
 		color: white!important;
 		cursor: pointer;
 	}
+}
+
+.no-scroll {
+	overflow: hidden;
 }

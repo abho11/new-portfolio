@@ -12,6 +12,7 @@ class Header extends Component {
         this.onThemeSwitchChange = this.onThemeSwitchChange.bind(this);
         this.closeMobileNav = this.closeMobileNav.bind(this);
         this.toggleTheme = this.toggleTheme.bind(this);
+        this.navRef = React.createRef();
     }
 
     toggleTheme() {
@@ -22,10 +23,31 @@ class Header extends Component {
         });
     }
 
+    handleOutsideClick = (e) => {
+        if (this.state.isMobileNavOpen && this.navRef.current && !this.navRef.current.contains(e.target)) {
+            e.preventDefault();
+            e.stopPropagation();
+            this.closeMobileNav();
+        }
+    }
+
+    componentDidMount() {
+        document.addEventListener('mousedown', this.handleOutsideClick, true);
+    }
+
+    componentWillUnmount() {
+        document.removeEventListener('mousedown', this.handleOutsideClick, true);
+    }
     toggleMobileNav = () => {
         this.setState(prevState => ({
             isMobileNavOpen: !prevState.isMobileNavOpen
-        }));
+        }), () => {
+            if (this.state.isMobileNavOpen) {
+                document.body.classList.add('no-scroll');
+            } else {
+                document.body.classList.remove('no-scroll');
+            }
+        });
     }
 
     onThemeSwitchChange() {
@@ -41,6 +63,7 @@ class Header extends Component {
 
     closeMobileNav() {
         this.setState({ isMobileNavOpen: false });
+        document.body.classList.remove('no-scroll');
     }
 
 
@@ -56,10 +79,12 @@ class Header extends Component {
       var name = this.props.sharedData.name;
       this.titles = this.props.sharedData.titles.map(x => [ x.toUpperCase(), 1500 ] ).flat();
     }
+      const { isMobileNavOpen } = this.state;
       const checked = this.state.checked; // Correctly access the checked state
       const themeSwitchText = checked ? "LIGHT MODE" : "DARK MODE";
+      const headerStyle = isMobileNavOpen ? { background: 'transparent' } : {};
 
-      const { isMobileNavOpen } = this.state;
+
 
       const HeaderTitleTypeAnimation = React.memo( () => {
       return <Typical className="title-styles" steps={this.titles} loop={50} />
@@ -68,7 +93,7 @@ class Header extends Component {
     return (
         <section  className='header' >
       <header id="home" style={{ height: window.innerHeight - 140, display: 'block' }}>
-          <div id='informative-header'>
+          <div id='informative-header' style={headerStyle}>
               <a href="https://github.com/abho11/new-portfolio" target="_blank" rel="noreferrer" className="github-corner" aria-label="View source on GitHub">
                   <svg width="90" height="90" id="cat" viewBox="0 0 250 250" style={{ fill: '#fff', color: '#151513', position: 'absolute', top: 0, border: 0, left: 0, transform: 'scale(-1, 1)', zIndex: 9999 }} aria-hidden="true">
                       <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
@@ -106,9 +131,9 @@ class Header extends Component {
 
 
           <FiMenu className="hamburger-menu" onClick={this.toggleMobileNav} />
-          <div  className={`nav mobile-nav ${isMobileNavOpen ? 'open' : ''}`}>
+          <div  ref={this.navRef} className={`nav mobile-nav ${isMobileNavOpen ? 'open' : ''}`}>
               <div className="close-btn" onClick={this.toggleMobileNav}>&times;</div>
-                  <li>{this.renderNavItem(themeSwitchText, this.toggleTheme)}</li>
+                  <li onClick={this.closeMobileNav}>{this.renderNavItem(themeSwitchText, this.toggleTheme)} </li>
                   <a href="#about" onClick={this.closeMobileNav} >ABOUT</a>
                   <a href="#projects" onClick={this.closeMobileNav}>PROJECTS</a>
                   <a href="#skills" onClick={this.closeMobileNav}>SKILLS</a>
