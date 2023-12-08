@@ -10,6 +10,42 @@
     },
     "projects": [
       {
+        "title": "My Portfolio",
+        "startDate": "2023",
+        "description": "Developed an interactive and responsive personal portfolio website to showcase my development projects, skills, certifications & work experience. The portfolio features a modern and clean design, light/dark theme mode, optimized for performance and user experience. Key functionalities include a dynamic project gallery, a blog section, and a contact form. Technologies used include React, Sass, and Node.js, with a focus on responsive design principles and SEO optimization.",
+        "images": [
+          "images/portfolio/my-portfolio/project1.jpeg",
+          "images/portfolio/my-portfolio/project2.jpeg"
+        ],
+        "url": "https://arunabhroy.dev/",
+        "technologies": [
+          {
+            "class": "devicon-react-original",
+            "name": "React"
+          },
+          {
+            "class": "devicon-sass-original",
+            "name": "Sass"
+          },
+          {
+            "class": "devicon-nodejs-plain",
+            "name": "Node.js"
+          },
+          {
+            "class": "devicon-html5-plain",
+            "name": "HTML"
+          },
+          {
+            "class": "devicon-css3-plain",
+            "name": "CSS"
+          },
+          {
+            "class": "devicon-javascript-plain",
+            "name": "JavaScript"
+          }
+        ]
+      },
+      {
         "title": "eCommerce UI/UX Enhancement",
         "startDate": "2023",
         "description": "As a Frontend Developer, I significantly improved the user experience for two key websites, UREDZONE (https://www.uredzone.com/home) and University of Utah Campus Store (https://www.campusstore.utah.edu/utah/home). I executed a complete overhaul of UI/UX designs, employing modern web technologies and best practices in frontend development. This initiative led to a marked increase in user engagement, reduction in bounce rates, and enhanced SEO performance, thereby boosting overall online sales and website traffic.",
@@ -21,7 +57,7 @@
         "technologies": [
           {
             "class": "devicon-react-original",
-            "name": "ReactJS"
+            "name": "React"
           },
           {
             "class": "devicon-html5-plain",
@@ -110,13 +146,13 @@
         "startDate": "2021",
         "description": "Led the design and development of an advanced Security Automation Tool at IBM, enhancing organizational security posture and incident response efficiency. The tool was developed using React, Node.js, and integrated with IBM's DevSecOps tools, streamlining security protocols and operational responses.",
         "images": [
-          "images/portfolio/security-automation/web-application-firewall.png",
-          "images/portfolio/security-automation/security-automation.png"
+          "images/portfolio/security-automation/project1.jpeg",
+          "images/portfolio/security-automation/project2.jpeg"
         ],
         "technologies": [
           {
             "class": "devicon-react-original",
-            "name": "ReactJS"
+            "name": "React"
           },
           {
             "class": "devicon-nodejs-plain",
@@ -192,7 +228,7 @@
         "title": "Frontend Developer",
         "years": "07.2023 - present",
         "technologies": [
-          "ReactJS",
+          "React",
           "Node.js",
           "JavaScript",
           "HTML/CSS",
@@ -211,7 +247,7 @@
         "title": "Web Developer",
         "years": "02.2021 - 11.2022",
         "technologies": [
-          "ReactJS",
+          "React",
           "Node.js",
           "Angular",
           "JavaScript",

@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import ProjectDetailsModal from "./ProjectDetailsModal";
 import { useSpring, animated } from 'react-spring';
 
-const ProjectCard = ({ project, showModal }) => {
+const ProjectCard = ({ project, showModal, additionalClass }) => {
   // Spring properties for the parallax effect
   const [{ scale }, set] = useSpring(() => ({
     scale: 1,
@@ -11,13 +11,13 @@ const ProjectCard = ({ project, showModal }) => {
 
   return (
       <animated.div
-          className="col-md-6"
+          className={`col-md-6 ${additionalClass}`}
           onMouseEnter={() => set({ scale: 0.9 })}
           onMouseLeave={() => set({ scale: 1 })}
           style={{
             cursor: "pointer",
             transform: scale.interpolate(scale => `scale(${scale})`),
-            margin: "10px 0",
+            margin: "0 auto",
           }}
           onClick={() => showModal(project)}
       >
@@ -61,13 +61,21 @@ class Projects extends Component {
 
     if (this.props.resumeProjects && this.props.resumeBasicInfo) {
       sectionName = this.props.resumeBasicInfo.section_name.projects;
-      projectCards = this.props.resumeProjects.map((project) => (
-          <ProjectCard
-              key={project.title}
-              project={project}
-              showModal={this.detailsModalShow}
-          />
-      ));
+      const projectsLength = this.props.resumeProjects.length;
+      projectCards = this.props.resumeProjects.map((project, index) => {
+        const isLastItem = index === projectsLength - 1;
+        const isOddTotal = projectsLength % 2 !== 0;
+        const centerClass = isLastItem && isOddTotal ? "center-last-item" : "";
+
+        return (
+            <ProjectCard
+                key={project.title}
+                project={project}
+                showModal={this.detailsModalShow}
+                additionalClass={centerClass}
+            />
+        );
+      });
     }
 
     return (
