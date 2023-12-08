@@ -36,7 +36,7 @@
   "skills": {
     "icons": [
       {
-        "name": "ReactJS",
+        "name": "React",
         "class": "devicon-react-original",
         "level": "90"
       },
@@ -46,7 +46,7 @@
         "level": "85"
       },
       {
-        "name": "AngularJS",
+        "name": "Angular",
         "class": "devicon-angularjs-plain",
         "level": "80"
       },
