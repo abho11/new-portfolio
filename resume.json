@@ -1,6 +1,6 @@
 {
     "basic_info": {
-      "description": "I am an Information Systems graduate from University of Utah with a strong focus on frontend development and ecommerce integration. Alongside my studies, I apply the same strategic thinking to my love for football and gaming. As a Manchester United fan, I understand teamwork and dedication, which I bring to my development projects. Outside coding, I enjoy nature photography, capturing moments that remind me of the importance of detail and focus in my work. Whether coding or gaming, I'm always aiming for precision, impact and success.",
+      "description": "I am an Information Systems graduate from University of Utah with a strong focus on software development. Alongside my studies, I apply the same strategic thinking to my love for football and gaming. As a Manchester United fan, I understand teamwork and dedication, which I bring to my development projects. Outside coding, I enjoy nature photography, capturing moments that remind me of the importance of detail and focus in my work. Whether coding or gaming, I'm always aiming for precision, impact and success.",
       "section_name": {
         "about": "About me",
         "projects": "Projects",
@@ -225,7 +225,7 @@
     "experience": [
       {
         "company": "University of Utah Campus Store",
-        "title": "Frontend Developer",
+        "title": "Software Developer - Frontend",
         "years": "07.2023 - present",
         "technologies": [
           "React",
@@ -244,8 +244,8 @@
       },
       {
         "company": "IBM",
-        "title": "Web Developer",
-        "years": "02.2021 - 11.2022",
+        "title": "Technical Consultant",
+        "years": "08.2021 - 11.2022",
         "technologies": [
           "React",
           "Node.js",
@@ -263,9 +263,9 @@
         ]
       },
       {
-        "company": "NMIT",
-        "title": "Application Developer",
-        "years": "02.2018 - 01.2021",
+        "company": "IBM",
+        "title": "Web Developer Intern",
+        "years": "02.2021 - 07.2021",
         "technologies": [
           "Python",
           "Django",

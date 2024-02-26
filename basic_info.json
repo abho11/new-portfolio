@@ -2,11 +2,8 @@
   "basic_info": {
     "name": "Hello! I'm Arunabh Roy",
     "titles": [
-      "Web Developer",
-      "UI/UX Designer",
-      "Frontend Developer",
-      "DevOps and Security Enthusiast",
-      "E-Commerce Integration",
+      "Software Engineering",
+      "Frontend Development",
       "Masters in Information Systems"
     ],
     "social": [
@@ -46,8 +43,8 @@
         "level": "85"
       },
       {
-        "name": "Angular",
-        "class": "devicon-angularjs-plain",
+        "name": "Java",
+        "class": "devicon-java-plain",
         "level": "80"
       },
       {
@@ -81,8 +78,18 @@
         "level": "95"
       },
       {
-        "name": "Sass",
-        "class": "devicon-sass-plain",
+        "name": "C/C++",
+        "class": "devicon-cplusplus-plain",
+        "level": "90"
+      },
+      {
+        "name": "C#",
+        "class": "devicon-csharp-plain",
+        "level": "90"
+      },
+      {
+        "name": "PHP",
+        "class": "devicon-php-plain",
         "level": "90"
       }
     ]
