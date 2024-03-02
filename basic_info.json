@@ -2,9 +2,11 @@
   "basic_info": {
     "name": "Hello! I'm Arunabh Roy",
     "titles": [
-      "Software Engineering",
+      "Web Application Development",
+      "User Interface Designing",
       "Frontend Development",
-      "Masters in Information Systems"
+      "Masters in Information Systems",
+      "Software Engineering"
     ],
     "social": [
       {
@@ -33,19 +35,74 @@
   "skills": {
     "icons": [
       {
+        "name": "HTML5",
+        "class": "devicon-html5-plain",
+        "level": "95"
+      },
+      {
+        "name": "CSS3",
+        "class": "devicon-css3-plain",
+        "level": "95"
+      },
+      {
+        "name": "Sass",
+        "class": "devicon-sass-plain",
+        "level": "95"
+      },
+      {
+        "name": "JavaScript",
+        "class": "devicon-javascript-plain",
+        "level": "90"
+      },
+      {
+        "name": "jQuery",
+        "class": "devicon-jquery-plain",
+        "level": "80"
+      },
+      {
+        "name": "Bootstrap 5",
+        "class": "devicon-bootstrap-plain",
+        "level": "85"
+      },
+      {
+        "name": "Figma",
+        "class": "devicon-figma-plain",
+        "level": "85"
+      },
+      {
+        "name": "Illustrator",
+        "class": "devicon-illustrator-plain",
+        "level": "85"
+      },
+      {
+        "name": "Adobe Photoshop",
+        "class": "devicon-photoshop-plain",
+        "level": "85"
+      },
+      {
+        "name": "XML",
+        "class": "devicon-xml-plain",
+        "level": "85"
+      },
+      {
+        "name": "Devicon",
+        "class": "devicon-devicon-plain",
+        "level": "85"
+      },
+      {
         "name": "React",
         "class": "devicon-react-original",
+        "level": "90"
+      },
+      {
+        "name": "Vite",
+        "class": "devicon-vite-original",
         "level": "90"
       },
       {
         "name": "Node.js",
         "class": "devicon-nodejs-plain",
         "level": "85"
-      },
-      {
-        "name": "Java",
-        "class": "devicon-java-plain",
-        "level": "80"
       },
       {
         "name": "Python",
@@ -62,21 +119,7 @@
         "class": "fab fa-aws",
         "level": "80"
       },
-      {
-        "name": "JavaScript",
-        "class": "devicon-javascript-plain",
-        "level": "90"
-      },
-      {
-        "name": "HTML5",
-        "class": "devicon-html5-plain",
-        "level": "95"
-      },
-      {
-        "name": "CSS3",
-        "class": "devicon-css3-plain",
-        "level": "95"
-      },
+
       {
         "name": "C/C++",
         "class": "devicon-cplusplus-plain",
