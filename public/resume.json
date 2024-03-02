@@ -10,6 +10,90 @@
     },
     "projects": [
       {
+        "title": "Team Lead - Web Development",
+        "startDate": "2023",
+        "description": "As the Project Lead, I spearheaded a dynamic team of 5 interns in the strategic migration and implementation of a corporate website onto the NetSuite platform. This challenging endeavor involved leveraging the latest web technologies, including HTML5, CSS3, JavaScript, and REST APIs, to ensure a seamless transition and enhance the website's functionality, performance, and user experience.",
+        "images": [
+          "images/portfolio/netsuite/one.jpeg",
+          "images/portfolio/netsuite/two.jpeg"
+        ],
+        "url": "https://beta.campusstore.utah.edu/",
+        "technologies": [
+          {
+            "class": "devicon-html5-plain",
+            "name": "HTML5"
+          },
+          {
+            "class": "devicon-css3-plain",
+            "name": "CSS3"
+          },
+          {
+            "class": "devicon-javascript-plain",
+            "name": "JavaScript"
+          },
+          {
+            "class": "devicon-sass-original",
+            "name": "Sass"
+          },
+          {
+            "class": "devicon-figma-plain",
+            "name": "Figma"
+          },
+          {
+            "class": "devicon-illustrator-plain",
+            "name": "Illustrator"
+          },
+          {
+            "class": "devicon-photoshop-plain",
+            "name": "Photoshop"
+          }
+        ]
+      },
+      {
+        "title": "Budgeting Web App",
+        "startDate": "2023",
+        "description": "In this collaborative UI project, I embarked on designing and developing a Budgeting Web App Dashboard from the ground up. My goal was to create a tool that not only aids users in managing their finances effectively but also delivers a visually appealing and intuitive user experience.",
+        "images": [
+          "images/portfolio/budgeting/one.jpeg",
+          "images/portfolio/budgeting/two.jpeg"
+        ],
+        "url": "https://github.com/SaltyJace/Fundments/",
+        "technologies": [
+          {
+            "class": "devicon-html5-plain",
+            "name": "HTML5"
+          },
+          {
+            "class": "devicon-css3-plain",
+            "name": "CSS3"
+          },
+          {
+            "class": "devicon-javascript-plain",
+            "name": "JavaScript"
+          },
+          {
+            "class": "devicon-sass-original",
+            "name": "Sass"
+          },
+          {
+            "class": "devicon-vite-original",
+            "name": "Vite"
+          },
+          {
+            "class": "devicon-figma-plain",
+            "name": "Figma"
+          },
+          {
+            "class": "devicon-illustrator-plain",
+            "name": "Illustrator"
+          },
+          {
+            "class": "devicon-photoshop-plain",
+            "name": "Photoshop"
+          }
+        ]
+      },
+      {
         "title": "My Portfolio",
         "startDate": "2023",
         "description": "Developed an interactive and responsive personal portfolio website to showcase my development projects, skills, certifications & work experience. The portfolio features a modern and clean design, light/dark theme mode, optimized for performance and user experience. Key functionalities include a dynamic project gallery, a blog section, and a contact form. Technologies used include React, Sass, and Node.js, with a focus on responsive design principles and SEO optimization.",
@@ -224,8 +308,8 @@
     ],
     "experience": [
       {
-        "company": "University of Utah Campus Store",
-        "title": "Software Developer - Frontend",
+        "company": "University of Utah",
+        "title": "Frontend Developer",
         "years": "07.2023 - present",
         "technologies": [
           "React",
@@ -234,6 +318,7 @@
           "HTML/CSS",
           "Sass",
           "Bootstrap",
+          "jQuery",
           "Jenkins",
           "NetSuite",
           "SuiteScript 2.0",
@@ -244,8 +329,8 @@
       },
       {
         "company": "IBM",
-        "title": "Technical Consultant",
-        "years": "08.2021 - 11.2022",
+        "title": "Web Developer",
+        "years": "02.2021 - 11.2022",
         "technologies": [
           "React",
           "Node.js",
@@ -263,9 +348,9 @@
         ]
       },
       {
-        "company": "IBM",
-        "title": "Web Developer Intern",
-        "years": "02.2021 - 07.2021",
+        "company": "NMIT",
+        "title": "Web Application Developer",
+        "years": "02.2018 - 01.2021",
         "technologies": [
           "Python",
           "Django",
