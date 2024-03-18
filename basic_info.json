@@ -55,6 +55,16 @@
         "level": "90"
       },
       {
+        "name": "PHP",
+        "class": "devicon-php-plain",
+        "level": "90"
+      },
+      {
+        "name": "Drupal CMS",
+        "class": "devicon-drupal-plain",
+        "level": "90"
+      },
+      {
         "name": "jQuery",
         "class": "devicon-jquery-plain",
         "level": "80"
@@ -129,12 +139,8 @@
         "name": "C#",
         "class": "devicon-csharp-plain",
         "level": "90"
-      },
-      {
-        "name": "PHP",
-        "class": "devicon-php-plain",
-        "level": "90"
       }
+
     ]
   }
 }
