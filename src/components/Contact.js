@@ -12,7 +12,7 @@ function Contact() {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            await axios.post('https://secret-atoll-63693-f79a45670cae.herokuapp.com/send', formData);
+            await axios.post('https://secret-atoll-63693-f79a45670cae.herokuapp.com/send-message', formData);
             setShowModal(true); // Show the modal on success
             setFormData({ name: '', email: '', message: '' }); // Optionally, reset the form
         } catch (error) {
