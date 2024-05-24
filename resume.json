@@ -1,6 +1,6 @@
 {
     "basic_info": {
-      "description": "I am an Information Systems graduate from University of Utah with a strong focus on software development. Alongside my studies, I apply the same strategic thinking to my love for football and gaming. As a Manchester United fan, I understand teamwork and dedication, which I bring to my development projects. Outside coding, I enjoy nature photography, capturing moments that remind me of the importance of detail and focus in my work. Whether coding or gaming, I'm always aiming for precision, impact and success.",
+      "description": "I am an Information Systems graduate from University of Utah with a strong focus on software and web development. Alongside my studies, I apply the same strategic thinking to my love for football and gaming. As a Manchester United fan, I understand teamwork and dedication, which I bring to my development projects. Outside coding, I enjoy nature photography, capturing moments that remind me of the importance of detail and focus in my work. Whether coding or gaming, I'm always aiming for precision, impact and success.",
       "section_name": {
         "about": "About me",
         "projects": "Projects",
@@ -9,6 +9,42 @@
       }
     },
     "projects": [
+      {
+        "title": "UHealth Feedback Management Tool",
+        "startDate": "2024",
+        "description": "This project developed a dynamic feedback system designed to streamline user interactions and backend processes using a suite of web development technologies. Aimed at enhancing user experience and administrative efficiency, the application allows for real-time feedback submission and processing, showcasing skills crucial for a Web Developer role at the University of Utah Health. This includes working with the GLOSS Design System, troubleshooting, and backend data management.",
+        "images": [
+          "images/portfolio/uhealth/one.jpg",
+          "images/portfolio/uhealth/two.jpg"
+        ],
+        "url": "https://fathomless-sea-63695-eca7615f7be2.herokuapp.com/",
+        "technologies": [
+          {
+            "class": "devicon-html5-plain",
+            "name": "HTML5"
+          },
+          {
+            "class": "devicon-css3-plain",
+            "name": "CSS3"
+          },
+          {
+            "class": "devicon-javascript-plain",
+            "name": "JavaScript"
+          },
+          {
+            "class": "devicon-php-original",
+            "name": "PHP"
+          },
+          {
+            "class": "devicon-mysql-plain",
+            "name": "MySQL"
+          },
+          {
+            "class": "devicon-nodejs-plain",
+            "name": "Node.js"
+          }
+        ]
+      },
       {
         "title": "Team Lead - Web Development",
         "startDate": "2023",
@@ -308,9 +344,26 @@
     ],
     "experience": [
       {
+        "company": "University of Utah Health",
+        "title": "Web Software Developer",
+        "years": "05.2024 - Present",
+        "technologies": [
+          "Drupal",
+          "JavaScript",
+          "HTML/CSS",
+          "Project Management",
+          "Git",
+          "DevOps",
+          "REST API",
+          "PHP",
+          "AngularJS",
+          "CI/CD"
+        ]
+      },
+      {
         "company": "University of Utah",
         "title": "Frontend Developer",
-        "years": "07.2023 - present",
+        "years": "07.2023 - 05.2024",
         "technologies": [
           "React",
           "Node.js",
@@ -329,7 +382,7 @@
       },
       {
         "company": "IBM",
-        "title": "Web Developer",
+        "title": "Technical Consultant",
         "years": "08.2021 - 11.2022",
         "technologies": [
           "React",
@@ -349,7 +402,7 @@
       },
       {
         "company": "IBM",
-        "title": "Web Application Developer Intern",
+        "title": "Web Developer Intern",
         "years": "02.2021 - 07.2021",
         "technologies": [
           "Python",
